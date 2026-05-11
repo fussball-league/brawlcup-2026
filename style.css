@@ -476,6 +476,38 @@ nav a:hover:not(.active) {
     width: 100%;
 }
 
+/* style.css */
+
+/* Contenedor para alinear título a la izquierda y fecha a la derecha */
+.contenedor-titulo-dia {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Alinea al fondo de la línea */
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Línea divisoria sutil */
+    padding-bottom: 8px;
+}
+
+/* Ajuste al encabezado existente para quitarle el fondo si lo tenía */
+.encabezado-dia {
+    margin-bottom: 0;
+    background: none; 
+    padding: 0;
+    border: none;
+    font-size: 1.4rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Estilo de la fecha a la derecha */
+.fecha-apertura {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.4); /* Color apagado para que no brille */
+    font-weight: 400;
+    font-family: 'Inter', sans-serif; /* O la fuente que uses */
+    letter-spacing: 0.5px;
+}
 
 /* Responsividad para móviles */
 @media (max-width: 900px) {
@@ -533,4 +565,14 @@ nav a:hover:not(.active) {
     .user-name {
         display: none; 
     }
+    
+    .contenedor-titulo-dia {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .fecha-apertura {
+        font-size: 0.75rem;
+    }
+    
 }
