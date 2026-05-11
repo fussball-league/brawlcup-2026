@@ -167,23 +167,12 @@
 }
 
 @media (max-width: 768px) {
-    /* En móviles, las dos barras de una partida se ponen una encima de otra */
+    #lista-resultados {
+        grid-template-columns: 1fr;
+    }
+    
     .grupo-resultado-encuesta div[style*="grid-template-columns"] {
         grid-template-columns: 1fr !important;
-    }
-}
-
-/* stresultados.css */
-
-@media (max-width: 768px) {
-    #lista-resultados {
-        grid-template-columns: 1fr; /* Una encuesta debajo de otra */
-        gap: 30px;
-    }
-
-    /* Si usaste el diseño de grupos por día en resultados */
-    .grupo-resultado-encuesta div[style*="grid-template-columns"] {
-        grid-template-columns: 1fr !important; 
     }
 
     .contenedor-barra {
@@ -191,7 +180,7 @@
     }
 
     .info-barra span {
-        font-size: 0.9rem; /* Texto un poco más pequeño para que no se corte */
+        font-size: 0.9rem;
     }
 
     .porcentaje {
