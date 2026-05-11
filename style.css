@@ -437,9 +437,21 @@ nav a:hover:not(.active) {
     padding-left: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+    main {
+        margin: 15px 10px;
+        padding: 15px;
+        width: calc(100% - 20px);
+    }
+
     .contenedor-votos {
-        grid-template-columns: 1fr; /* 1 columna en móviles */
+        grid-template-columns: 1fr; /* Una columna para los equipos */
+        gap: 12px;
+    }
+
+    .opcion-voto {
+        padding: 15px;
+        min-height: 70px;
     }
 }
 
@@ -459,7 +471,6 @@ nav a:hover:not(.active) {
     padding: 10px 0;
 }
 
-/* Encabezado del día (Día 1, Día 2...) */
 .seccion-dia {
     margin-bottom: 50px;
     width: 100%;
