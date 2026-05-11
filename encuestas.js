@@ -3,6 +3,10 @@ const TIEMPO_APERTURA_D1 = 1778752800;
 const TIEMPO_APERTURA_D2 = 1778839200;
 const TIEMPO_APERTURA_D3 = 1778950800;
 
+const TIEMPO_CLAUSURA_D1 = 1778839200;
+const TIEMPO_CLAUSURA_D2 = 1778950800;
+const TIEMPO_CLAUSURA_D3 = 1779012000;
+
 const PARTIDAS = [
     {
         dia: "Dia 1 - Brawl Cup",
@@ -10,6 +14,7 @@ const PARTIDAS = [
         id_db: '1d472a11-16fa-4cac-bbe3-a5eb9c99dd39',
         ganador_id: '',
         apertura: TIEMPO_APERTURA_D1,
+        clausura: TIEMPO_CLAUSURA_D1,
         opciones: [
             {
                 id: '9ed9f893-ded6-451c-ac56-d2d315e7b699',
@@ -29,6 +34,7 @@ const PARTIDAS = [
         id_db: '2e2cec6d-83cc-4b06-8a7e-c046d21ca4b2',
         ganador_id: '',
         apertura: TIEMPO_APERTURA_D1,
+        clausura: TIEMPO_CLAUSURA_D1,
         opciones: [
             {
                 id: 'b96a21e0-6ab6-491f-ae5c-fb5d2810b71a',
@@ -48,6 +54,7 @@ const PARTIDAS = [
         id_db: '68e33f71-0f86-43ec-8889-b204dc93944e',
         ganador_id: '',
         apertura: TIEMPO_APERTURA_D1,
+        clausura: TIEMPO_CLAUSURA_D1,
         opciones: [
             {
                 id: '03da3827-bc1b-4794-8396-5bdf0e52d82b',
@@ -67,6 +74,7 @@ const PARTIDAS = [
         id_db: '03a1f84b-c9ea-4637-88e4-361792af25ae',
         ganador_id: '',
         apertura: TIEMPO_APERTURA_D1,
+        clausura: TIEMPO_CLAUSURA_D1,
         opciones: [
             {
                 id: '2f26a5df-036d-4b24-92cf-cca57159a2e0',
@@ -86,6 +94,7 @@ const PARTIDAS = [
         id_db: '226ef38a-090a-4e1d-95a2-e4de8cb92ad2',
         ganador_id: '',
         apertura: TIEMPO_APERTURA_D1,
+        clausura: TIEMPO_CLAUSURA_D1,
         opciones: [
             {
                 id: '7d9d7377-d5dc-46d9-99f1-255067316b76',
@@ -105,6 +114,7 @@ const PARTIDAS = [
         id_db: '9eb89d68-dea6-4010-8603-0aeab0a5abdd',
         ganador_id: '',
         apertura: TIEMPO_APERTURA_D1,
+        clausura: TIEMPO_CLAUSURA_D1,
         opciones: [
             {
                 id: 'c8f29ae3-445d-465e-a03d-e69915773694',
@@ -123,6 +133,7 @@ const PARTIDAS = [
         titulo: "Grupo C - Partida #1",
         id_db: 'd9a43a99-af1f-4466-9388-637691c50a44',
         apertura: TIEMPO_APERTURA_D2,
+        clausura: TIEMPO_CLAUSURA_D2,
         opciones: [
             {
                 id: '441524f3-4cbf-4141-9e59-8878d4f51ff0',
@@ -141,6 +152,7 @@ const PARTIDAS = [
         titulo: "Grupo C - Partida #2",
         id_db: '18c22022-9225-4702-be58-f8a15dc7eff9',
         apertura: TIEMPO_APERTURA_D2,
+        clausura: TIEMPO_CLAUSURA_D2,
         opciones: [
             {
                 id: 'af04c4d4-3f6d-4ae1-bb8a-25f96c867817',
@@ -159,6 +171,7 @@ const PARTIDAS = [
         titulo: "Grupo C - Partida #3",
         id_db: '8cb55192-c819-4570-9a1a-5a849b7589dc',
         apertura: TIEMPO_APERTURA_D2,
+        clausura: TIEMPO_CLAUSURA_D2,
         opciones: [
             {
                 id: '6fc410ee-a4cf-4ed2-bedf-b830d87d6dcb',
@@ -177,6 +190,7 @@ const PARTIDAS = [
         titulo: "Grupo D - Partida #1",
         id_db: 'c87ab9c7-5041-4549-80d7-838c7a6f8904',
         apertura: TIEMPO_APERTURA_D2,
+        clausura: TIEMPO_CLAUSURA_D2,
         opciones: [
             {
                 id: '9740f23d-cfa5-4c38-beb3-d930d12a746d',
@@ -195,6 +209,7 @@ const PARTIDAS = [
         titulo: "Grupo D - Partida #2",
         id_db: '3b8c3a47-b779-4b06-a0ec-bb991f0da365',
         apertura: TIEMPO_APERTURA_D2,
+        clausura: TIEMPO_CLAUSURA_D2,
         opciones: [
             {
                 id: '60dc4499-af60-4192-bcaf-9fc0eef66bf6',
@@ -213,6 +228,7 @@ const PARTIDAS = [
         titulo: "Grupo D - Partida #3",
         id_db: '717ebf01-8804-4542-964c-1bc523eec1c9',
         apertura: TIEMPO_APERTURA_D2,
+        clausura: TIEMPO_CLAUSURA_D2,
         opciones: [
             {
                 id: '91c499c5-77e9-4ad6-8acd-023e9945a984',
@@ -231,6 +247,7 @@ const PARTIDAS = [
         titulo: "Cuartos de Final #1",
         id_db: '',
         apertura: TIEMPO_APERTURA_D3,
+        clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
             {
                 id: '',
@@ -249,6 +266,7 @@ const PARTIDAS = [
         titulo: "Cuartos de Final #2",
         id_db: '',
         apertura: TIEMPO_APERTURA_D3,
+        clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
             {
                 id: '',
@@ -267,6 +285,7 @@ const PARTIDAS = [
         titulo: "Cuartos de Final #3",
         id_db: '',
         apertura: TIEMPO_APERTURA_D3,
+        clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
             {
                 id: '',
@@ -285,6 +304,7 @@ const PARTIDAS = [
         titulo: "Cuartos de Final #4",
         id_db: '',
         apertura: TIEMPO_APERTURA_D3,
+        clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
             {
                 id: '',
