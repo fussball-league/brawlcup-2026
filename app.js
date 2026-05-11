@@ -1,5 +1,5 @@
 const clienteSupabase = supabase.createClient(CONFIG.URL_DB, CONFIG.KEY_DB);
-let encuestasCompletadas = []; // Guardaremos los id_db de las encuestas ya votadas
+let encuestasCompletadas = [];
 
 // 2. Funciones globales de acceso
 window.loginConDiscord = async () => {
@@ -20,7 +20,6 @@ function marcarOpcionSeleccionada(opcionId) {
     const botonClickeado = document.querySelector(`[onclick="votar('${opcionId}')"]`);
     if (!botonClickeado) return;
 
-    // Buscamos el contenedor .grupo-encuesta más cercano al botón
     const grupoEncuesta = botonClickeado.closest('.grupo-encuesta');
     if (!grupoEncuesta) return;
 
@@ -50,11 +49,9 @@ async function verificarVotosUsuario(user) {
 
     if (votos && votos.length > 0) {
         votos.forEach(v => {
-            // Anotamos que esta encuesta ya está lista
             if (!encuestasCompletadas.includes(v.encuesta_id)) {
                 encuestasCompletadas.push(v.encuesta_id);
             }
-            // Marcamos visualmente la opción elegida
             marcarOpcionSeleccionada(v.opcion_id);
         });
     }
