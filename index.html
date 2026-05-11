@@ -54,9 +54,9 @@
         <i class="fa-solid fa-triangle-exclamation"></i>
         <div class="auth-error-info">
             <strong>Error de acceso</strong>
-            <p id="auth-error-msg">No se pudo completar el inicio de sesión.</p>
+            <p id="auth-error-msg"></p>
         </div>
-        <button onclick="document.getElementById('auth-error-container').style.display='none'">×</button>
+        <button onclick="this.closest('.auth-error-wrapper').style.display='none'">×</button>
     </div>
 </div>
     <footer>
