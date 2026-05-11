@@ -8,6 +8,7 @@ const PARTIDAS = [
         dia: "Dia 1 - Brawl Cup",
         titulo: "Grupo A - Partida #1",
         id_db: '1d472a11-16fa-4cac-bbe3-a5eb9c99dd39',
+        ganador_id: '',
         apertura: TIEMPO_APERTURA_D1,
         opciones: [
             {
@@ -26,6 +27,7 @@ const PARTIDAS = [
         dia: "Dia 1 - Brawl Cup",
         titulo: "Grupo A - Partida #2",
         id_db: '2e2cec6d-83cc-4b06-8a7e-c046d21ca4b2',
+        ganador_id: '',
         apertura: TIEMPO_APERTURA_D1,
         opciones: [
             {
@@ -44,6 +46,7 @@ const PARTIDAS = [
         dia: "Dia 1 - Brawl Cup",
         titulo: "Grupo A - Partida #3",
         id_db: '68e33f71-0f86-43ec-8889-b204dc93944e',
+        ganador_id: '',
         apertura: TIEMPO_APERTURA_D1,
         opciones: [
             {
@@ -62,6 +65,7 @@ const PARTIDAS = [
         dia: "Dia 1 - Brawl Cup",
         titulo: "Grupo B - Partida #1",
         id_db: '03a1f84b-c9ea-4637-88e4-361792af25ae',
+        ganador_id: '',
         apertura: TIEMPO_APERTURA_D1,
         opciones: [
             {
@@ -80,6 +84,7 @@ const PARTIDAS = [
         dia: "Dia 1 - Brawl Cup",
         titulo: "Grupo B - Partida #2",
         id_db: '226ef38a-090a-4e1d-95a2-e4de8cb92ad2',
+        ganador_id: '',
         apertura: TIEMPO_APERTURA_D1,
         opciones: [
             {
@@ -98,6 +103,7 @@ const PARTIDAS = [
         dia: "Dia 1 - Brawl Cup",
         titulo: "Grupo B - Partida #3",
         id_db: '9eb89d68-dea6-4010-8603-0aeab0a5abdd',
+        ganador_id: '',
         apertura: TIEMPO_APERTURA_D1,
         opciones: [
             {
