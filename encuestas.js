@@ -307,13 +307,23 @@ function renderizarEncuestas() {
         return acc;
     }, {});
 
-    // Generamos el HTML
     contenedor.innerHTML = Object.keys(gruposPorDia).map(nombreDia => {
         const partidasDelDia = gruposPorDia[nombreDia];
-        
+    
+        const timestampApertura = partidasDelDia[0].apertura * 1000; 
+        const fechaLocal = new Date(timestampApertura).toLocaleString(undefined, {
+            day: '2-digit',
+            month: 'short',
+            hour: '2-digit',
+            minute: '2-digit'
+        });
+
         return `
             <div class="seccion-dia">
-                <h2 class="encabezado-dia">${nombreDia}</h2>
+                <div class="contenedor-titulo-dia">
+                    <h2 class="encabezado-dia">${nombreDia}</h2>
+                    <span class="fecha-apertura">${fechaLocal}</span>
+                </div>
                 <div class="contenedor-partidas-dia">
                     ${partidasDelDia.map(partida => {
                         const estaAbierta = ahoraUnix >= partida.apertura;
