@@ -1,4 +1,7 @@
-const clienteSupabase = supabase.createClient(CONFIG.URL_DB, CONFIG.KEY_DB);
+const SUPABASE_URL = typeof CONFIG !== 'undefined' ? CONFIG.URL_DB : null;
+const SUPABASE_KEY = typeof CONFIG !== 'undefined' ? CONFIG.KEY_DB : null;
+
+const clienteSupabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 let encuestasCompletadas = [];
 
 // 2. Funciones globales de acceso
