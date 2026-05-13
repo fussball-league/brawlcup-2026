@@ -257,12 +257,12 @@ const PARTIDAS = [
         clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
             {
-                id: '',
+                id: '0ee86279-8bd4-4e63-8032-0e0bc61966cc',
                 nombre: 'A1',
                 imagen: 'https://imgur.com/5Wm3uA4.png'
             },
             {
-                id: '',
+                id: 'ca207860-0d47-4828-843f-7162b5ba5497',
                 nombre: 'B2',
                 imagen: 'https://imgur.com/5Wm3uA4.png'
             }
@@ -277,12 +277,12 @@ const PARTIDAS = [
         clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
             {
-                id: '',
+                id: 'bbbfa33b-0f65-4274-9ed7-a8226951cb43',
                 nombre: 'D1',
                 imagen: 'https://imgur.com/5Wm3uA4.png'
             },
             {
-                id: '',
+                id: '573edfc1-d901-4d61-8eb2-e20b9b93cf08',
                 nombre: 'C2',
                 imagen: 'https://imgur.com/5Wm3uA4.png'
             }
@@ -297,12 +297,12 @@ const PARTIDAS = [
         clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
             {
-                id: '',
+                id: 'ce42e428-4e54-44d3-8451-c38cea6e9496',
                 nombre: 'B1',
                 imagen: 'https://imgur.com/5Wm3uA4.png'
             },
             {
-                id: '',
+                id: 'c056d34a-a0c8-4a76-9f5d-ae253b9da626',
                 nombre: 'A2',
                 imagen: 'https://imgur.com/5Wm3uA4.png'
             }
@@ -317,12 +317,12 @@ const PARTIDAS = [
         clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
             {
-                id: '',
+                id: '34d1672e-35dd-4cd6-8800-e237ba7bb492',
                 nombre: 'C1',
                 imagen: 'https://imgur.com/5Wm3uA4.png'
             },
             {
-                id: '',
+                id: 'b28a7659-2488-4fb3-843c-dea3c6d4de1f',
                 nombre: 'D2',
                 imagen: 'https://imgur.com/5Wm3uA4.png'
             }
@@ -337,12 +337,12 @@ const PARTIDAS = [
         clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
             {
-                id: '',
+                id: 'b39d7719-2dad-494c-808e-eb61a9f59317',
                 nombre: 'QF1',
                 imagen: 'https://imgur.com/5Wm3uA4.png'
             },
             {
-                id: '',
+                id: 'e3ab02eb-f560-431e-9850-ad561e9f2c68',
                 nombre: 'QF2',
                 imagen: 'https://imgur.com/5Wm3uA4.png'
             }
@@ -357,12 +357,12 @@ const PARTIDAS = [
         clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
             {
-                id: '',
+                id: '3b1deb49-3edb-4503-8a12-5dfc0407cce2',
                 nombre: 'QF3',
                 imagen: 'https://imgur.com/5Wm3uA4.png'
             },
             {
-                id: '',
+                id: '35224446-b4c8-4bfd-b1cc-560d9b9041ea',
                 nombre: 'QF4',
                 imagen: 'https://imgur.com/5Wm3uA4.png'
             }
@@ -377,12 +377,12 @@ const PARTIDAS = [
         clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
             {
-                id: '',
+                id: '12c70354-7336-4b44-b2a8-189f15c81f87',
                 nombre: 'SF1',
                 imagen: 'https://imgur.com/5Wm3uA4.png'
             },
             {
-                id: '',
+                id: '142f17b3-f364-4bc4-b46c-499e2a3ee87e',
                 nombre: 'SF2',
                 imagen: 'https://imgur.com/5Wm3uA4.png'
             }
