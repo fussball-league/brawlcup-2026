@@ -79,6 +79,8 @@ main {
     width: 100%;
     max-width: 900px; 
     margin: 20px auto;
+    position: fixed;
+    align-items: center;
 }
 
 .opcion-voto {
