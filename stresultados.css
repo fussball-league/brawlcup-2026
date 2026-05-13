@@ -7,7 +7,7 @@
 }
 
 #lista-resultados {
-    display: block; /* Cambiamos de grid a block para manejar grupos */
+    display: block;
     width: 100%;
 }
 
@@ -43,7 +43,7 @@
 
 .dispute-container {
     display: grid;
-    grid-template-columns: 180px 1fr 180px;
+    grid-template-columns: 180px 0fr 180px;
     align-items: center;
     gap: 20px;
 }
