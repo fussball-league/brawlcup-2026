@@ -318,6 +318,63 @@ const PARTIDAS = [
             }
         ]
     },
+    {
+        dia: "Dia 3 - Brawl Cup",
+        titulo: "Semifinal #1",
+        id_db: '',
+        apertura: TIEMPO_APERTURA_D3,
+        clausura: TIEMPO_CLAUSURA_D3,
+        opciones: [
+            {
+                id: '',
+                nombre: 'QF1',
+                imagen: 'https://imgur.com/5Wm3uA4.png'
+            },
+            {
+                id: '',
+                nombre: 'QF2',
+                imagen: 'https://imgur.com/5Wm3uA4.png'
+            }
+        ]
+    },
+    {
+        dia: "Dia 3 - Brawl Cup",
+        titulo: "Semifinal #2",
+        id_db: '',
+        apertura: TIEMPO_APERTURA_D3,
+        clausura: TIEMPO_CLAUSURA_D3,
+        opciones: [
+            {
+                id: '',
+                nombre: 'QF3',
+                imagen: 'https://imgur.com/5Wm3uA4.png'
+            },
+            {
+                id: '',
+                nombre: 'QF4',
+                imagen: 'https://imgur.com/5Wm3uA4.png'
+            }
+        ]
+    },
+    {
+        dia: "Dia 3 - Brawl Cup",
+        titulo: "Gran Final",
+        id_db: '',
+        apertura: TIEMPO_APERTURA_D3,
+        clausura: TIEMPO_CLAUSURA_D3,
+        opciones: [
+            {
+                id: '',
+                nombre: 'SF1',
+                imagen: 'https://imgur.com/5Wm3uA4.png'
+            },
+            {
+                id: '',
+                nombre: 'SF2',
+                imagen: 'https://imgur.com/5Wm3uA4.png'
+            }
+        ]
+    },
 ];
 
 function renderizarEncuestas() {
