@@ -61,19 +61,23 @@
 .team-percent { font-size: 1.2rem; font-weight: 900; color: #00a2ff; }
 
 .dispute-bar-bg {
-    height: 12px;
+    height: 14px;
     background: #010a0f;
     border-radius: 20px;
     position: relative;
+    align-items: stretch;
     display: flex;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.05);
+    box-sizing: border-box;
 }
 
 .dispute-fill {
     height: 100%;
     transition: width 1s ease-in-out;
-    border-radius: 0 !important; 
+    border-radius: 0 !important;
+    margin: 0;
+    padding: 0;
 }
 
 .dispute-fill.left {
