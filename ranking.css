@@ -1,0 +1,159 @@
+/* Centrado del encabezado */
+.leaderboard-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+.leaderboard-header h1 {
+    font-size: 2.2rem;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.leaderboard-header p {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1rem;
+}
+
+/* Contenedor responsivo para la tabla */
+.tabla-contenedor {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    overflow-x: auto; /* Permite scroll horizontal si la tabla es muy ancha */
+    margin: 0 auto;
+    max-width: 800px; /* Centra la tabla y limita su ancho máximo */
+    width: 95%;
+}
+
+.ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 400px; /* Evita que los datos se amontonen demasiado */
+}
+
+/* Ajustes Responsive */
+@media (max-width: 600px) {
+    .leaderboard-header h1 {
+        font-size: 1.6rem;
+    }
+    
+    .leaderboard-header p {
+        font-size: 0.85rem;
+    }
+
+    .ranking-table th, 
+    .ranking-table td {
+        padding: 12px 10px; /* Reducimos padding en móvil */
+    }
+
+    .user-name-table {
+        font-size: 0.85rem;
+    }
+
+    .avatar-ranking {
+        width: 28px;
+        height: 28px;
+    }
+    .votos-count small {
+        display: block;
+        font-size: 0.5rem;
+    }
+}
+
+
+.votos-count.txt-derecha {
+    text-align: right;
+    font-variant-numeric: tabular-nums; 
+    padding-right: 10px;
+}
+
+.votos-count small {
+    display: inline-block;
+    width: 25px;
+    text-align: left;
+    margin-left: 5px;
+}
+
+/* Responsivo: asegurar que en móvil se mantenga la alineación */
+@media (max-width: 600px) {
+    .votos-count.txt-derecha {
+        padding-right: 15px;
+    }
+}
+
+.tabla-contenedor {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+}
+
+.ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ranking-table th {
+    text-align: left;
+    padding: 15px;
+    font-size: 0.8rem;
+    color: #555;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ranking-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+/* DIFERENCIADORES DEL PODIO */
+
+/* Oro */
+.fila-ranking.top-1 {
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.05), transparent);
+    border-left: 3px solid #ffd700;
+}
+.fila-ranking.top-1 .votos-count { color: #ffd700; font-weight: bold; }
+
+/* Plata */
+.fila-ranking.top-2 {
+    background: linear-gradient(90deg, rgba(192, 192, 192, 0.05), transparent);
+    border-left: 3px solid #c0c0c0;
+}
+.fila-ranking.top-2 .votos-count { color: #c0c0c0; }
+
+/* Bronce */
+.fila-ranking.top-3 {
+    background: linear-gradient(90deg, rgba(205, 127, 50, 0.05), transparent);
+    border-left: 3px solid #cd7f32;
+}
+.fila-ranking.top-3 .votos-count { color: #cd7f32; }
+
+/* ESTILOS DE USUARIO */
+.usuario-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar-ranking {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.user-name-table {
+    font-size: 0.95rem;
+    color: #eee;
+}
+
+.votos-count small {
+    font-size: 0.6rem;
+    opacity: 0.4;
+}
