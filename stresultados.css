@@ -62,21 +62,20 @@
 
 .dispute-bar-bg {
     height: 12px; 
-    background: #010a0f;
+    background: transparent;
     border-radius: 20px;
     position: relative;
-    display: block;
+    display: flex;
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-sizing: border-box;
+    align-items: center;
+    gap: 5px;
+    border: none;
 }
 
 .dispute-fill {
-    position: absolute;
-    top: 0;
     height: 100%;
     transition: width 1s ease-in-out;
-    border-radius: 0 !important;
+    border-radius: 20px !important;
 }
 
 .dispute-fill.left {
