@@ -132,6 +132,7 @@ const PARTIDAS = [
         dia: "Dia 2 - Brawl Cup",
         titulo: "Grupo C - Partida #1",
         id_db: 'd9a43a99-af1f-4466-9388-637691c50a44',
+        ganador_id: '',
         apertura: TIEMPO_APERTURA_D2,
         clausura: TIEMPO_CLAUSURA_D2,
         opciones: [
@@ -151,6 +152,7 @@ const PARTIDAS = [
         dia: "Dia 2 - Brawl Cup",
         titulo: "Grupo C - Partida #2",
         id_db: '18c22022-9225-4702-be58-f8a15dc7eff9',
+        ganador_id: '',
         apertura: TIEMPO_APERTURA_D2,
         clausura: TIEMPO_CLAUSURA_D2,
         opciones: [
@@ -170,6 +172,7 @@ const PARTIDAS = [
         dia: "Dia 2 - Brawl Cup",
         titulo: "Grupo C - Partida #3",
         id_db: '8cb55192-c819-4570-9a1a-5a849b7589dc',
+        ganador_id: '',
         apertura: TIEMPO_APERTURA_D2,
         clausura: TIEMPO_CLAUSURA_D2,
         opciones: [
@@ -189,6 +192,7 @@ const PARTIDAS = [
         dia: "Dia 2 - Brawl Cup",
         titulo: "Grupo D - Partida #1",
         id_db: 'c87ab9c7-5041-4549-80d7-838c7a6f8904',
+        ganador_id: '',
         apertura: TIEMPO_APERTURA_D2,
         clausura: TIEMPO_CLAUSURA_D2,
         opciones: [
@@ -208,6 +212,7 @@ const PARTIDAS = [
         dia: "Dia 2 - Brawl Cup",
         titulo: "Grupo D - Partida #2",
         id_db: '3b8c3a47-b779-4b06-a0ec-bb991f0da365',
+        ganador_id: '',
         apertura: TIEMPO_APERTURA_D2,
         clausura: TIEMPO_CLAUSURA_D2,
         opciones: [
@@ -227,6 +232,7 @@ const PARTIDAS = [
         dia: "Dia 2 - Brawl Cup",
         titulo: "Grupo D - Partida #3",
         id_db: '717ebf01-8804-4542-964c-1bc523eec1c9',
+        ganador_id: '',
         apertura: TIEMPO_APERTURA_D2,
         clausura: TIEMPO_CLAUSURA_D2,
         opciones: [
@@ -245,7 +251,8 @@ const PARTIDAS = [
     {
         dia: "Dia 3 - Brawl Cup",
         titulo: "Cuartos de Final #1",
-        id_db: '',
+        id_db: '5d797cfa-7ba4-4477-b616-aa772e28a013',
+        ganador_id: '',
         apertura: TIEMPO_APERTURA_D3,
         clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
@@ -264,7 +271,8 @@ const PARTIDAS = [
     {
         dia: "Dia 3 - Brawl Cup",
         titulo: "Cuartos de Final #2",
-        id_db: '',
+        id_db: '7c30cb12-c47a-4925-8f9f-568b6ec68560',
+        ganador_id: '',
         apertura: TIEMPO_APERTURA_D3,
         clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
@@ -283,7 +291,8 @@ const PARTIDAS = [
     {
         dia: "Dia 3 - Brawl Cup",
         titulo: "Cuartos de Final #3",
-        id_db: '',
+        id_db: '54173a7d-cd30-474d-abf7-555fee6f9677',
+        ganador_id: '',
         apertura: TIEMPO_APERTURA_D3,
         clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
@@ -302,7 +311,8 @@ const PARTIDAS = [
     {
         dia: "Dia 3 - Brawl Cup",
         titulo: "Cuartos de Final #4",
-        id_db: '',
+        id_db: '6b8a09c5-8fba-4c7b-b6ef-792613367525',
+        ganador_id: '',
         apertura: TIEMPO_APERTURA_D3,
         clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
@@ -321,7 +331,8 @@ const PARTIDAS = [
     {
         dia: "Dia 3 - Brawl Cup",
         titulo: "Semifinal #1",
-        id_db: '',
+        id_db: '2126890f-89bd-41c8-abc7-ce49628d6c0f',
+        ganador_id: '',
         apertura: TIEMPO_APERTURA_D3,
         clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
@@ -340,7 +351,8 @@ const PARTIDAS = [
     {
         dia: "Dia 3 - Brawl Cup",
         titulo: "Semifinal #2",
-        id_db: '',
+        id_db: '667c3759-61e6-467b-8bf3-19ad2a18b5bc',
+        ganador_id: '',
         apertura: TIEMPO_APERTURA_D3,
         clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
@@ -359,7 +371,8 @@ const PARTIDAS = [
     {
         dia: "Dia 3 - Brawl Cup",
         titulo: "Gran Final",
-        id_db: '',
+        id_db: '25699301-b8a8-4799-9c5b-caee81cbfcdc',
+        ganador_id: '',
         apertura: TIEMPO_APERTURA_D3,
         clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
