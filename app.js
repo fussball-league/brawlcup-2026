@@ -105,7 +105,7 @@ async function votar(opcionId) {
     const ahoraUnix = Math.floor(Date.now() / 1000);
 
     if (ahoraUnix > partidaActual.clausura) {
-        mostrarModal("Votación Cerrada", "El tiempo para votar en esta partida ha finalizado.");
+        mostrarModal("Fuera de tiempo", "El tiempo para votar en este encuentro ha finalizado.");
         return;
     }
 
@@ -114,7 +114,7 @@ async function votar(opcionId) {
 
     const { data: { session } } = await clienteSupabase.auth.getSession();
     if (!session?.user) {
-        mostrarModal("Sesión Requerida", "Inicia sesión con Discord.", true);
+        mostrarModal("Sesión Requerida", "Conecta tu cuenta de Discord", true);
         return;
     }
 
@@ -129,7 +129,7 @@ async function votar(opcionId) {
     if (!error) {
         encuestasCompletadas.push(idEncuesta);
         marcarOpcionSeleccionada(opcionId);
-        mostrarModal("¡Éxito!", "Voto registrado correctamente.");
+        mostrarModal("¡Éxito!", "Voto registrado correctamente");
     }
 }
 
@@ -140,7 +140,7 @@ function mostrarModal(t, m, l = false) {
     document.getElementById('modal-title').innerText = t;
     document.getElementById('modal-text').innerText = m;
     const btn = document.getElementById('modal-primary-btn');
-    btn.innerHTML = l ? `Login <i class="fa-brands fa-discord"></i>` : "Entendido";
+    btn.innerHTML = l ? `Inicia sesión con <i class="fa-brands fa-discord"></i>` : "Entendido";
     btn.onclick = l ? () => { cerrarModal(); loginConDiscord(); } : cerrarModal;
     modal.style.display = 'flex';
 }
