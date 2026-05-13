@@ -201,7 +201,6 @@ async function actualizarTodoResultados() {
                     <div class="dispute-bar-bg">
                         <div class="dispute-fill left" style="width: ${porcA}%"></div>
                         <div class="dispute-fill right" style="width: ${porcB}%"></div>
-                        <div class="dispute-divider">VS</div>
                     </div>
 
                     <div class="team-info right">
