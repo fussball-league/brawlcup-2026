@@ -18,7 +18,7 @@ const PARTIDAS = [
         opciones: [
             {
                 id: '9ed9f893-ded6-451c-ac56-d2d315e7b699',
-                nombre: 'Bounty Hunters',
+                nombre: 'BOUNTY HUNTERS',
                 imagen: 'https://imgur.com/Hif4pNK.png'
             },
             {
