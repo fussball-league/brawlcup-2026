@@ -87,7 +87,7 @@
 
 .dispute-fill.right {
     right: 0;
-    background: linear-gradient(90deg, #5c0a0a, #ff4444);
+    background: linear-gradient(270deg, #5c0a0a, #ff4444);
     z-index: 1;
 }
 
