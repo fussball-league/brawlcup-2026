@@ -112,7 +112,7 @@ const PARTIDAS = [
         dia: "Dia 1 - Brawl Cup",
         titulo: "Grupo B - Partida #3",
         id_db: '9eb89d68-dea6-4010-8603-0aeab0a5abdd',
-        ganador_id: '',
+        ganador_id: 'c8f29ae3-445d-465e-a03d-e69915773694',
         apertura: TIEMPO_APERTURA_D1,
         clausura: TIEMPO_CLAUSURA_D1,
         opciones: [
@@ -263,8 +263,8 @@ const PARTIDAS = [
             },
             {
                 id: 'ca207860-0d47-4828-843f-7162b5ba5497',
-                nombre: 'B2',
-                imagen: 'https://imgur.com/5Wm3uA4.png'
+                nombre: 'ONLY REALM',
+                imagen: 'https://imgur.com/FrlpICP.png'
             }
         ]
     },
@@ -298,8 +298,8 @@ const PARTIDAS = [
         opciones: [
             {
                 id: 'ce42e428-4e54-44d3-8451-c38cea6e9496',
-                nombre: 'ONLY REALM',
-                imagen: 'https://imgur.com/FrlpICP.png'
+                nombre: 'ZETA DIVISION',
+                imagen: 'https://imgur.com/EVy6P4Q.png'
             },
             {
                 id: 'c056d34a-a0c8-4a76-9f5d-ae253b9da626',
