@@ -172,3 +172,83 @@
     font-size: 0.6rem;
     opacity: 0.4;
 }
+
+.podio-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Alinea los bloques al suelo */
+    gap: 15px;
+    height: 380px;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.podio-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 10px;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+    text-align: center;
+    /* Efecto de desvanecimiento inferior */
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+/* Colores y Alturas */
+.podio-1 { 
+    height: 100%; 
+    background: linear-gradient(180deg, rgba(255, 215, 0, 0.12) 0%, transparent 100%);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-bottom: none;
+    order: 2; /* Centro */
+}
+.podio-2 { 
+    height: 80%; 
+    background: linear-gradient(180deg, rgba(192, 192, 192, 0.12) 0%, transparent 100%);
+    border: 2px solid rgba(192, 192, 192, 0.3);
+    border-bottom: none;
+    order: 1; /* Izquierda */
+}
+.podio-3 { 
+    height: 65%; 
+    background: linear-gradient(180deg, rgba(205, 127, 50, 0.12) 0%, transparent 100%);
+    border: 2px solid rgba(205, 127, 50, 0.3);
+    border-bottom: none;
+    order: 3; /* Derecha */
+}
+
+/* Elementos internos */
+.podio-avatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 3px solid rgba(255,255,255,0.1);
+    margin-bottom: 12px;
+}
+.podio-1 .podio-avatar { width: 85px; height: 85px; border-color: #FFD700; }
+
+.podio-name {
+    color: #fff;
+    font-weight: 800;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.podio-stats {
+    font-size: 0.75rem;
+    color: #888;
+}
+
+.podio-puntos {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-top: 5px;
+}
+
+.podio-puntos span { font-size: 0.6rem; color: #666; }
+.podio-medal { font-size: 2rem; margin-bottom: 5px; }
