@@ -98,7 +98,7 @@
 }
 
 .ranking-table th {
-    text-align: left;
+    text-align: center;
     padding: 15px;
     font-size: 0.8rem;
     color: #555;
@@ -107,6 +107,7 @@
 }
 
 .ranking-table td {
+    text-align: center;
     padding: 12px 15px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.02);
 }
