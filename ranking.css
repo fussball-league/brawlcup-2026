@@ -213,7 +213,7 @@
     order: 1; /* Izquierda */
 }
 .podio-3 { 
-    height: 70%; 
+    height: 75%; 
     background: linear-gradient(180deg, rgba(205, 127, 50, 0.12) 0%, transparent 100%);
     border: 2px solid rgba(205, 127, 50, 0.3);
     border-bottom: none;
