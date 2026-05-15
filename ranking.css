@@ -112,6 +112,20 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.02);
 }
 
+/* Centrado de columnas en el ranking */
+.col-centrada {
+    text-align: center !important;
+    vertical-align: middle;
+}
+
+/* Ajuste adicional para que la info de usuario (avatar + nombre) se vea bien centrada */
+.usuario-info.col-centrada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
 /* DIFERENCIADORES DEL PODIO */
 
 /* Oro */
