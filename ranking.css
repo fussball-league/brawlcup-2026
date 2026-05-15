@@ -221,53 +221,66 @@
 /* RESPONSIVE PARA MÓVIL */
 @media (max-width: 600px) {
     
-    /* 1. Ajuste del Podio */
+    /* Ajuste del contenedor principal para evitar recortes */
     .podio-layout {
-        height: auto; /* Quitamos la altura fija */
-        flex-direction: column; /* Apilamos los bloques verticalmente */
+        height: auto; /* Cambiamos a auto para que crezca según el contenido */
+        min-height: 450px;
+        flex-direction: column; /* Apilamos en lugar de mostrar en horizontal si el ancho es crítico */
         align-items: center;
-        gap: 10px;
+        gap: 15px;
         margin: 20px auto;
-        -webkit-mask-image: none; /* Quitamos el desvanecimiento para que se vea claro en móvil */
+        padding: 10px;
+        /* Quitamos el mask-image en móvil si dificulta la lectura */
+        -webkit-mask-image: none;
         mask-image: none;
     }
 
+    /* Redimensionamos los items para que no se encimen */
     .podio-item {
-        width: 90%;
-        max-width: none;
-        height: auto !important; /* Ignoramos las alturas de 100%, 80%, 65% */
-        flex-direction: row; /* En móvil se ven mejor como filas */
-        justify-content: flex-start;
+        width: 100%;
+        max-width: 320px;
+        height: auto !important; /* Forzamos que ignoren las alturas de escritorio */
         padding: 15px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.05); /* Separador visual */
         border-radius: 12px;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-        order: unset !important; /* Reseteamos el order (2, 1, 3) para que sigan el orden natural */
+        order: unset !important; /* Mantiene el orden 1, 2, 3 de arriba a abajo */
     }
 
+    /* Ajuste de medalla y puntos en la misma línea */
     .podio-medal {
-        font-size: 1.2rem;
-        margin-right: 15px;
-        margin-bottom: 0;
-        min-width: 80px; /* Espacio para medalla + puntos */
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
     }
 
+    .podio-medal span {
+        font-size: 1rem !important; /* Ajuste del tamaño del puntaje */
+    }
+
+    /* Reducción de avatares para ahorrar espacio vertical */
     .podio-avatar {
-        width: 45px !important;
-        height: 45px !important;
-        margin-right: 15px;
-        margin-bottom: 0;
+        width: 50px !important;
+        height: 50px !important;
+        margin-bottom: 8px;
+    }
+
+    .podio-1 .podio-avatar {
+        width: 65px !important;
+        height: 65px !important;
     }
 
     .podio-name {
         font-size: 0.9rem;
-        text-align: left;
-        flex-grow: 1;
+        margin-bottom: 5px;
     }
 
     .podio-stats {
-        text-align: right;
-        font-size: 0.7rem;
+        font-size: 0.75rem;
     }
+}
 
     /* 2. Ajuste de las Tablas de Grupos */
     #tablas-grupos-container {
