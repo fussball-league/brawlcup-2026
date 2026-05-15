@@ -45,19 +45,20 @@ function renderizarPodio(lista) {
         { ...lista[1], rank: 2, medal: '🥈' },
         { ...lista[2], rank: 3, medal: '🥉' }
     ].filter(user => user.nombre !== undefined);
-
+    
     contenedor.innerHTML = tops.map(user => `
-        <div class="podio-item podio-${user.rank}">
-            <div class="podio-medal">${user.medal}</div>
-            <img src="${user.avatar || 'https://via.placeholder.com/80'}" class="podio-avatar">
-            <span class="podio-name">${user.nombre}</span>
-            <div class="podio-stats">
-                <p><i class="fa-solid fa-trophy"></i> ${user.aciertos} Aciertos</p>
-                <p class="podio-puntos">${user.puntos} <span>PTS</span></p>
-            </div>
+    <div class="podio-item podio-${user.rank}">
+        <div class="podio-medal">
+            ${user.medal} 
+            <span style="font-size: 1.2rem; font-weight: 900; margin-left: 5px;">${user.puntos}</span>
         </div>
-    `).join('');
-}
+        <img src="${user.avatar || 'https://via.placeholder.com/80'}" class="podio-avatar">
+        <span class="podio-name">${user.nombre}</span>
+        <div class="podio-stats">
+            <p><i class="fa-solid fa-trophy"></i> ${user.aciertos} Aciertos</p>
+        </div>
+    </div>
+`).join('');
 
 function renderizarTabla(lista) {
     const tbody = document.getElementById('ranking-body');
