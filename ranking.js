@@ -12,7 +12,8 @@ async function cargarRanking() {
             acc[v.username] = { 
                 nombre: v.username, 
                 avatar: v.avatar_url, 
-                puntos: 0
+                puntos: 0,
+                aciertos: 0
             };
         }
 
@@ -20,8 +21,11 @@ async function cargarRanking() {
         usuario.puntos += 25;
 
         const partidaInfo = PARTIDAS.find(p => p.id_db === v.encuesta_id);
+        
+        // Si el usuario acertó al ganador
         if (partidaInfo && (partidaInfo.ganador_id === v.opcion_id)) {
             usuario.puntos += 75;
+            usuario.aciertos += 1; // Sumamos un acierto
         }
 
         return acc;
@@ -46,12 +50,13 @@ function renderizarTabla(lista) {
 
         return `
             <tr class="fila-ranking ${clasePodio}">
-                <td class="posicion">${iconoPosicion}</td>
-                <td class="usuario-info">
+                <td class="col-centrada">${iconoPosicion}</td>
+                <td class="usuario-info col-centrada">
                     <img src="${user.avatar || 'https://via.placeholder.com/40'}" class="avatar-ranking">
                     <span class="user-name-table">${user.nombre}</span>
                 </td>
-                <td class="votos-count txt-derecha">${user.puntos} <small>PTS</small></td>
+                <td class="col-centrada"><i class="fa-solid fa-trophy" style="color: #FFD700; margin-right: 5px;"></i> ${user.aciertos}</td>
+                <td class="votos-count col-centrada">${user.puntos} <small>PTS</small></td>
             </tr>
         `;
     }).join('');
