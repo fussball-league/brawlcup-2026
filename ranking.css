@@ -130,21 +130,21 @@
 
 /* Oro */
 .fila-ranking.top-1 {
-    background: linear-gradient(90deg, rgba(255, 215, 0, 0.1), transparent);
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.25), rgba(255, 215, 0, 0.1));
     border-left: 3px solid #ffd700;
 }
 .fila-ranking.top-1 .votos-count { color: #ffd700; font-weight: bold; }
 
 /* Plata */
 .fila-ranking.top-2 {
-    background: linear-gradient(90deg, rgba(192, 192, 192, 0.1), transparent);
+    background: linear-gradient(90deg, rgba(192, 192, 192, 0.25), rgba(255, 215, 0, 0.1));
     border-left: 3px solid #c0c0c0;
 }
 .fila-ranking.top-2 .votos-count { color: #c0c0c0; }
 
 /* Bronce */
 .fila-ranking.top-3 {
-    background: linear-gradient(90deg, rgba(205, 127, 50, 0.1), transparent);
+    background: linear-gradient(90deg, rgba(205, 127, 50, 0.25), rgba(255, 215, 0, 0.1));
     border-left: 3px solid #cd7f32;
 }
 .fila-ranking.top-3 .votos-count { color: #cd7f32; }
