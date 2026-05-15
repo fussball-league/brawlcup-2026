@@ -52,7 +52,7 @@ const PARTIDAS = [
         dia: "Dia 1 - Brawl Cup",
         titulo: "Grupo A - Partida #3",
         id_db: '68e33f71-0f86-43ec-8889-b204dc93944e',
-        ganador_id: '',
+        ganador_id: '03da3827-bc1b-4794-8396-5bdf0e52d82b',
         apertura: TIEMPO_APERTURA_D1,
         clausura: TIEMPO_CLAUSURA_D1,
         opciones: [
@@ -258,8 +258,8 @@ const PARTIDAS = [
         opciones: [
             {
                 id: '0ee86279-8bd4-4e63-8032-0e0bc61966cc',
-                nombre: 'A1',
-                imagen: 'https://imgur.com/5Wm3uA4.png'
+                nombre: 'HMBLE',
+                imagen: 'https://i.imgur.com/mmZ8KAq.png'
             },
             {
                 id: 'ca207860-0d47-4828-843f-7162b5ba5497',
@@ -303,8 +303,8 @@ const PARTIDAS = [
             },
             {
                 id: 'c056d34a-a0c8-4a76-9f5d-ae253b9da626',
-                nombre: 'A2',
-                imagen: 'https://imgur.com/5Wm3uA4.png'
+                nombre: 'BOUNTY HUNTERS',
+                imagen: 'https://imgur.com/Hif4pNK.png'
             }
         ]
     },
