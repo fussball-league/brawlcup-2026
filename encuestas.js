@@ -92,7 +92,7 @@ const PARTIDAS = [
         dia: "Dia 1 - Brawl Cup",
         titulo: "Grupo B - Partida #2",
         id_db: '226ef38a-090a-4e1d-95a2-e4de8cb92ad2',
-        ganador_id: '',
+        ganador_id: '7d9d7377-d5dc-46d9-99f1-255067316b76',
         apertura: TIEMPO_APERTURA_D1,
         clausura: TIEMPO_CLAUSURA_D1,
         opciones: [
@@ -298,8 +298,8 @@ const PARTIDAS = [
         opciones: [
             {
                 id: 'ce42e428-4e54-44d3-8451-c38cea6e9496',
-                nombre: 'B1',
-                imagen: 'https://imgur.com/5Wm3uA4.png'
+                nombre: 'ONLY REALM',
+                imagen: 'https://imgur.com/FrlpICP.png'
             },
             {
                 id: 'c056d34a-a0c8-4a76-9f5d-ae253b9da626',
