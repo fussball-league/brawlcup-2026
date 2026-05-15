@@ -35,35 +35,6 @@
     min-width: 400px; /* Evita que los datos se amontonen demasiado */
 }
 
-/* Ajustes Responsive */
-@media (max-width: 600px) {
-    .leaderboard-header h1 {
-        font-size: 1.6rem;
-    }
-    
-    .leaderboard-header p {
-        font-size: 0.85rem;
-    }
-
-    .ranking-table th, 
-    .ranking-table td {
-        padding: 12px 10px; /* Reducimos padding en móvil */
-    }
-
-    .user-name-table {
-        font-size: 0.85rem;
-    }
-
-    .avatar-ranking {
-        width: 28px;
-        height: 28px;
-    }
-    .votos-count small {
-        display: block;
-        font-size: 0.5rem;
-    }
-}
-
 
 .votos-count.txt-derecha {
     text-align: right;
@@ -78,12 +49,6 @@
     margin-left: 5px;
 }
 
-/* Responsivo: asegurar que en móvil se mantenga la alineación */
-@media (max-width: 600px) {
-    .votos-count.txt-derecha {
-        padding-right: 15px;
-    }
-}
 
 .tabla-contenedor {
     background: rgba(255, 255, 255, 0.02);
@@ -252,3 +217,76 @@
 
 .podio-puntos span { font-size: 0.6rem; color: #666; }
 .podio-medal { font-size: 2rem; margin-bottom: 5px; }
+
+/* RESPONSIVE PARA MÓVIL */
+@media (max-width: 600px) {
+    
+    /* 1. Ajuste del Podio */
+    .podio-layout {
+        height: auto; /* Quitamos la altura fija */
+        flex-direction: column; /* Apilamos los bloques verticalmente */
+        align-items: center;
+        gap: 10px;
+        margin: 20px auto;
+        -webkit-mask-image: none; /* Quitamos el desvanecimiento para que se vea claro en móvil */
+        mask-image: none;
+    }
+
+    .podio-item {
+        width: 90%;
+        max-width: none;
+        height: auto !important; /* Ignoramos las alturas de 100%, 80%, 65% */
+        flex-direction: row; /* En móvil se ven mejor como filas */
+        justify-content: flex-start;
+        padding: 15px;
+        border-radius: 12px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        order: unset !important; /* Reseteamos el order (2, 1, 3) para que sigan el orden natural */
+    }
+
+    .podio-medal {
+        font-size: 1.2rem;
+        margin-right: 15px;
+        margin-bottom: 0;
+        min-width: 80px; /* Espacio para medalla + puntos */
+    }
+
+    .podio-avatar {
+        width: 45px !important;
+        height: 45px !important;
+        margin-right: 15px;
+        margin-bottom: 0;
+    }
+
+    .podio-name {
+        font-size: 0.9rem;
+        text-align: left;
+        flex-grow: 1;
+    }
+
+    .podio-stats {
+        text-align: right;
+        font-size: 0.7rem;
+    }
+
+    /* 2. Ajuste de las Tablas de Grupos */
+    #tablas-grupos-container {
+        grid-template-columns: 1fr; /* Una tabla debajo de la otra */
+        padding: 10px;
+    }
+
+    .tabla-grupo-card {
+        padding: 5px;
+    }
+
+    .tabla-posiciones td, 
+    .tabla-posiciones th {
+        padding: 12px 8px; /* Reducimos padding para que quepa el texto */
+        font-size: 0.8rem;
+    }
+
+    .nombre-equipo-tabla {
+        font-size: 0.85rem;
+    }
+}
+
