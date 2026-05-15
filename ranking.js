@@ -18,7 +18,7 @@ async function cargarRanking() {
         }
 
         const usuario = acc[v.username];
-        usuario.puntos += 25; 
+        usuario.puntos += 25;
 
         const partidaInfo = PARTIDAS.find(p => p.id_db === v.encuesta_id);
         
@@ -40,6 +40,7 @@ function renderizarPodio(lista) {
     const contenedor = document.getElementById('podio-container');
     if (!contenedor || lista.length === 0) return;
 
+    // Tomamos solo los 3 primeros puestos
     const tops = [
         { ...lista[0], rank: 1, medal: '🥇' },
         { ...lista[1], rank: 2, medal: '🥈' },
@@ -48,15 +49,12 @@ function renderizarPodio(lista) {
 
     contenedor.innerHTML = tops.map(user => `
         <div class="podio-item podio-${user.rank}">
-            <div class="podio-medal">
-                ${user.medal} 
-                <span style="font-size: 1.2rem; font-weight: 900; margin-left: 5px;">${user.puntos}</span>
-            </div>
-            
+            <div class="podio-medal">${user.medal}</div>
             <img src="${user.avatar || 'https://via.placeholder.com/80'}" class="podio-avatar">
             <span class="podio-name">${user.nombre}</span>
             <div class="podio-stats">
                 <p><i class="fa-solid fa-trophy"></i> ${user.aciertos} Aciertos</p>
+                <p class="podio-puntos">${user.puntos} <span>PTS</span></p>
             </div>
         </div>
     `).join('');
