@@ -12,7 +12,7 @@ const PARTIDAS = [
         dia: "Dia 1 - Brawl Cup",
         titulo: "Grupo A - Partida #1",
         id_db: '1d472a11-16fa-4cac-bbe3-a5eb9c99dd39',
-        ganador_id: '',
+        ganador_id: '1213d015-d66c-458e-8d20-909e956e062c',
         apertura: TIEMPO_APERTURA_D1,
         clausura: TIEMPO_CLAUSURA_D1,
         opciones: [
