@@ -338,4 +338,30 @@
         display: none;
     }
 }
+@media (max-width: 600px) {
+    .tabla-contenedor {
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+        -webkit-overflow-scrolling: touch;
+    }
 
+    .ranking-table {
+        min-width: 450px; 
+        border-collapse: collapse;
+    }
+
+    .ranking-table td, 
+    .ranking-table th {
+        white-space: nowrap;
+        padding: 12px 10px;
+    }
+
+    .user-name-table {
+        display: inline-block;
+        max-width: 120px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        vertical-align: middle;
+    }
+}
