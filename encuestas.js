@@ -243,7 +243,7 @@ const PARTIDAS = [
         dia: "Dia 2 - Brawl Cup",
         titulo: "Grupo D - Partida #3",
         id_db: '717ebf01-8804-4542-964c-1bc523eec1c9',
-        ganador_id: '',
+        ganador_id: '91c499c5-77e9-4ad6-8acd-023e9945a984',
         visible: true,
         apertura: TIEMPO_APERTURA_D2,
         clausura: TIEMPO_CLAUSURA_D2,
