@@ -297,8 +297,8 @@ const PARTIDAS = [
             },
             {
                 id: '573edfc1-d901-4d61-8eb2-e20b9b93cf08',
-                nombre: 'C2',
-                imagen: 'https://imgur.com/5Wm3uA4.png'
+                nombre: 'REVENANT XSPARK',
+                imagen: 'https://imgur.com/L5Q0Mqs.png'
             }
         ]
     },
@@ -334,8 +334,8 @@ const PARTIDAS = [
         opciones: [
             {
                 id: '34d1672e-35dd-4cd6-8800-e237ba7bb492',
-                nombre: 'C1',
-                imagen: 'https://imgur.com/5Wm3uA4.png'
+                nombre: 'CRAZY RACCOON',
+                imagen: 'https://imgur.com/o0mDON8.png'
             },
             {
                 id: 'b28a7659-2488-4fb3-843c-dea3c6d4de1f',
