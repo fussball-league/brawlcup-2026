@@ -139,7 +139,7 @@ const PARTIDAS = [
         titulo: "Grupo C - Partida #1",
         id_db: 'd9a43a99-af1f-4466-9388-637691c50a44',
         ganador_id: '441524f3-4cbf-4141-9e59-8878d4f51ff0',
-        visible: true,
+        visible: false,
         apertura: TIEMPO_APERTURA_D2,
         clausura: TIEMPO_CLAUSURA_D2,
         opciones: [
@@ -160,7 +160,7 @@ const PARTIDAS = [
         titulo: "Grupo C - Partida #2",
         id_db: '18c22022-9225-4702-be58-f8a15dc7eff9',
         ganador_id: 'af04c4d4-3f6d-4ae1-bb8a-25f96c867817',
-        visible: true,
+        visible: false,
         apertura: TIEMPO_APERTURA_D2,
         clausura: TIEMPO_CLAUSURA_D2,
         opciones: [
@@ -181,7 +181,7 @@ const PARTIDAS = [
         titulo: "Grupo C - Partida #3",
         id_db: '8cb55192-c819-4570-9a1a-5a849b7589dc',
         ganador_id: '783fc1d5-8bb6-451d-a104-b1e57d5e513e',
-        visible: true,
+        visible: false,
         apertura: TIEMPO_APERTURA_D2,
         clausura: TIEMPO_CLAUSURA_D2,
         opciones: [
@@ -202,7 +202,7 @@ const PARTIDAS = [
         titulo: "Grupo D - Partida #1",
         id_db: 'c87ab9c7-5041-4549-80d7-838c7a6f8904',
         ganador_id: '2f2706f7-b62f-4905-8cac-7be0c180d7c3',
-        visible: true,
+        visible: false,
         apertura: TIEMPO_APERTURA_D2,
         clausura: TIEMPO_CLAUSURA_D2,
         opciones: [
@@ -223,7 +223,7 @@ const PARTIDAS = [
         titulo: "Grupo D - Partida #2",
         id_db: '3b8c3a47-b779-4b06-a0ec-bb991f0da365',
         ganador_id: '60dc4499-af60-4192-bcaf-9fc0eef66bf6',
-        visible: true,
+        visible: false,
         apertura: TIEMPO_APERTURA_D2,
         clausura: TIEMPO_CLAUSURA_D2,
         opciones: [
@@ -244,7 +244,7 @@ const PARTIDAS = [
         titulo: "Grupo D - Partida #3",
         id_db: '717ebf01-8804-4542-964c-1bc523eec1c9',
         ganador_id: '91c499c5-77e9-4ad6-8acd-023e9945a984',
-        visible: true,
+        visible: false,
         apertura: TIEMPO_APERTURA_D2,
         clausura: TIEMPO_CLAUSURA_D2,
         opciones: [
@@ -498,7 +498,17 @@ const TABLAS_GRUPOS = {
         { pos: 1, equipo: "ZETA DIVISION", sets: "2-0", rondas: "6-2" },
         { pos: 2, equipo: "ONLY REALM", sets: "1-1", rondas: "5-3" },
         { pos: 3, equipo: "BC* GAMING SA", sets: "0-2", rondas: "0-6" }
-    ]
+    ],
+    "Grupo C": [
+        { pos: 1, equipo: "CRAZY RACCOON", sets: "2-0", rondas: "6-0" },
+        { pos: 2, equipo: "REVENANT XSPARK", sets: "1-1", rondas: "3-4" },
+        { pos: 3, equipo: "ETERNAL ESPORTS", sets: "0-2", rondas: "1-6" }
+    ],
+    "Grupo D": [
+        { pos: 1, equipo: "TRIBE GAMING", sets: "2-0", rondas: "6-4" },
+        { pos: 1, equipo: "FUT ESPORTS", sets: "1-1", rondas: "5-3" },
+        { pos: 1, equipo: "TOXIC LOTUS", sets: "0-2", rondas: "2-6" }
+    ],
 };
 
 function renderizarTablasGrupos() {
