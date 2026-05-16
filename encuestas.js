@@ -292,8 +292,8 @@ const PARTIDAS = [
         opciones: [
             {
                 id: 'bbbfa33b-0f65-4274-9ed7-a8226951cb43',
-                nombre: 'D1',
-                imagen: 'https://imgur.com/5Wm3uA4.png'
+                nombre: 'TRIBE GAMING',
+                imagen: 'https://imgur.com/YAt1lmp.png'
             },
             {
                 id: '573edfc1-d901-4d61-8eb2-e20b9b93cf08',
@@ -339,8 +339,8 @@ const PARTIDAS = [
             },
             {
                 id: 'b28a7659-2488-4fb3-843c-dea3c6d4de1f',
-                nombre: 'D2',
-                imagen: 'https://imgur.com/5Wm3uA4.png'
+                nombre: 'FUT ESPORTS',
+                imagen: 'https://imgur.com/M5RcvX5.png'
             }
         ]
     },
