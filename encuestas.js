@@ -506,8 +506,8 @@ const TABLAS_GRUPOS = {
     ],
     "Grupo D": [
         { pos: 1, equipo: "TRIBE GAMING", sets: "2-0", rondas: "6-4" },
-        { pos: 1, equipo: "FUT ESPORTS", sets: "1-1", rondas: "5-3" },
-        { pos: 1, equipo: "TOXIC LOTUS", sets: "0-2", rondas: "2-6" }
+        { pos: 2, equipo: "FUT ESPORTS", sets: "1-1", rondas: "5-3" },
+        { pos: 3, equipo: "TOXIC LOTUS", sets: "0-2", rondas: "2-6" }
     ],
 };
 
