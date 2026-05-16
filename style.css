@@ -770,3 +770,63 @@ nav a:hover:not(.active) {
     }
     
 }
+
+@media (max-width: 600px) {
+    /* Contenedor de las dos tablas */
+    #tablas-grupos-container {
+        display: flex;
+        flex-direction: column; /* Una tabla arriba de la otra */
+        gap: 25px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    /* La tarjeta que envuelve cada tabla */
+    .tabla-grupo-card {
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.02);
+        border-radius: 8px;
+        overflow: hidden; /* Evita que los bordes se salgan */
+    }
+
+    /* El título (Grupo A, B...) */
+    .titulo-grupo {
+        font-size: 0.7rem;
+        margin-bottom: 10px;
+        text-align: left;
+        padding-left: 5px;
+    }
+
+    /* Hacemos que la tabla sea deslizable si el nombre del equipo es muy largo */
+    .tabla-posiciones {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        border-spacing: 0 4px; /* Mantenemos la separación de bloques */
+    }
+
+    /* Ajuste de las celdas en móvil */
+    .tabla-posiciones th, 
+    .tabla-posiciones td {
+        padding: 12px 8px; /* Un poco más de espacio para que sea fácil tocar con el dedo */
+        font-size: 0.8rem;
+    }
+
+    /* Columna Equipo: le damos un ancho mínimo para que no se encoja */
+    .col-equipo {
+        min-width: 120px;
+        text-align: left !important; /* En móvil, los nombres se leen mejor a la izquierda */
+        padding-left: 10px !important;
+    }
+
+    .col-data {
+        min-width: 45px;
+        text-align: center;
+    }
+
+    .fila-verde td, .fila-roja td {
+        border-top: 1px solid rgba(255,255,255,0.05);
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+}
