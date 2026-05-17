@@ -5,7 +5,7 @@ const TIEMPO_APERTURA_D3 = 1778950800;
 
 const TIEMPO_CLAUSURA_D1 = 1778839200;
 const TIEMPO_CLAUSURA_D2 = 1778943600;
-const TIEMPO_CLAUSURA_D3 = 1779012000;
+const TIEMPO_CLAUSURA_D3 = 1789012000;
 
 const PARTIDAS = [
     {
@@ -264,7 +264,7 @@ const PARTIDAS = [
         dia: "Dia 3 - Brawl Cup",
         titulo: "Cuartos de Final #1",
         id_db: '5d797cfa-7ba4-4477-b616-aa772e28a013',
-        ganador_id: '',
+        ganador_id: '0ee86279-8bd4-4e63-8032-0e0bc61966cc',
         visible: true,
         apertura: TIEMPO_APERTURA_D3,
         clausura: TIEMPO_CLAUSURA_D3,
@@ -285,7 +285,7 @@ const PARTIDAS = [
         dia: "Dia 3 - Brawl Cup",
         titulo: "Cuartos de Final #2",
         id_db: '7c30cb12-c47a-4925-8f9f-568b6ec68560',
-        ganador_id: '',
+        ganador_id: 'bbbfa33b-0f65-4274-9ed7-a8226951cb43',
         visible: true,
         apertura: TIEMPO_APERTURA_D3,
         clausura: TIEMPO_CLAUSURA_D3,
@@ -306,7 +306,7 @@ const PARTIDAS = [
         dia: "Dia 3 - Brawl Cup",
         titulo: "Cuartos de Final #3",
         id_db: '54173a7d-cd30-474d-abf7-555fee6f9677',
-        ganador_id: '',
+        ganador_id: 'ce42e428-4e54-44d3-8451-c38cea6e9496',
         visible: true,
         apertura: TIEMPO_APERTURA_D3,
         clausura: TIEMPO_CLAUSURA_D3,
@@ -349,19 +349,19 @@ const PARTIDAS = [
         titulo: "Semifinal #1",
         id_db: '2126890f-89bd-41c8-abc7-ce49628d6c0f',
         ganador_id: '',
-        visible: false,
+        visible: true,
         apertura: TIEMPO_APERTURA_D3,
         clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
             {
                 id: 'b39d7719-2dad-494c-808e-eb61a9f59317',
-                nombre: 'QF1',
-                imagen: 'https://imgur.com/5Wm3uA4.png'
+                nombre: 'HMBLE',
+                imagen: 'https://i.imgur.com/mmZ8KAq.png'
             },
             {
                 id: 'e3ab02eb-f560-431e-9850-ad561e9f2c68',
-                nombre: 'QF2',
-                imagen: 'https://imgur.com/5Wm3uA4.png'
+                nombre: 'TRIBE GAMING',
+                imagen: 'https://imgur.com/YAt1lmp.png'
             }
         ]
     },
@@ -376,8 +376,8 @@ const PARTIDAS = [
         opciones: [
             {
                 id: '3b1deb49-3edb-4503-8a12-5dfc0407cce2',
-                nombre: 'QF3',
-                imagen: 'https://imgur.com/5Wm3uA4.png'
+                nombre: 'ZETA DIVISION',
+                imagen: 'https://imgur.com/EVy6P4Q.png'
             },
             {
                 id: '35224446-b4c8-4bfd-b1cc-560d9b9041ea',
