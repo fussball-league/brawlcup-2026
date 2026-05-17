@@ -5,7 +5,8 @@ const TIEMPO_APERTURA_D3 = 1778950800;
 
 const TIEMPO_CLAUSURA_D1 = 1778839200;
 const TIEMPO_CLAUSURA_D2 = 1778943600;
-const TIEMPO_CLAUSURA_D3 = 1789012000;
+const TIEMPO_CLAUSURA_D3 = 1779012000;
+const TIEMPO_CLAUSURA_D3S = 1789012000;
 
 const PARTIDAS = [
     {
@@ -351,7 +352,7 @@ const PARTIDAS = [
         ganador_id: '',
         visible: true,
         apertura: TIEMPO_APERTURA_D3,
-        clausura: TIEMPO_CLAUSURA_D3,
+        clausura: TIEMPO_CLAUSURA_D3S,
         opciones: [
             {
                 id: 'b39d7719-2dad-494c-808e-eb61a9f59317',
@@ -370,9 +371,9 @@ const PARTIDAS = [
         titulo: "Semifinal #2",
         id_db: '667c3759-61e6-467b-8bf3-19ad2a18b5bc',
         ganador_id: '',
-        visible: false,
+        visible: true,
         apertura: TIEMPO_APERTURA_D3,
-        clausura: TIEMPO_CLAUSURA_D3,
+        clausura: TIEMPO_CLAUSURA_D3S,
         opciones: [
             {
                 id: '3b1deb49-3edb-4503-8a12-5dfc0407cce2',
@@ -381,7 +382,7 @@ const PARTIDAS = [
             },
             {
                 id: '35224446-b4c8-4bfd-b1cc-560d9b9041ea',
-                nombre: 'QF4',
+                nombre: 'POR DEFINIR',
                 imagen: 'https://imgur.com/5Wm3uA4.png'
             }
         ]
