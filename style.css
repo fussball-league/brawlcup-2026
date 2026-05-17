@@ -447,23 +447,33 @@ nav ul li a.active {
 }
 
 /* ==========================================================================
-   EFECTOS DE APARICIÓN SECUENCIAL (SCROLL ANIMATIONS)
+   EFECTOS DE APARICIÓN SECUENCIAL (CSS PURO SIN JAVASCRIPT)
    ========================================================================== */
 
-/* Estado inicial: oculto y desplazado 30px hacia abajo */
-.fade-section {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), 
-                transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
-    will-change: opacity, transform; /* Optimiza el rendimiento en móviles */
+/* Definimos la animación de entrada */
+@keyframes entradaSuave {
+    0% {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-/* Estado activo: se vuelve visible y sube a su posición original */
-.fade-section.visible {
-    opacity: 1;
-    transform: translateY(0);
+/* Estado de las secciones: se animan de forma nativa al cargar */
+.fade-section {
+    opacity: 0; /* Evita parpadeos antes de iniciar */
+    animation: entradaSuave 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
+
+/* Asignamos retrasos progresivos a cada sección usando nth-child */
+.fade-section:nth-child(1) { animation-delay: 0.1s; } /* Encabezado Recap */
+.fade-section:nth-child(2) { animation-delay: 0.25s; } /* Estadísticas */
+.fade-section:nth-child(3) { animation-delay: 0.4s; } /* Tablas de Grupos */
+.fade-section:nth-child(4) { animation-delay: 0.55s; } /* Llaves Playoffs */
+.fade-section:nth-child(5) { animation-section: 0.7s; } /* Ranking */
 
 /* ==========================================================================
    8. TABLA DE RANKING INFERIOR (RESTO DE JUGADORES)
