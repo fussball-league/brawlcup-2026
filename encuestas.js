@@ -370,7 +370,7 @@ const PARTIDAS = [
         dia: "Dia 3 - Brawl Cup",
         titulo: "Semifinal #2",
         id_db: '667c3759-61e6-467b-8bf3-19ad2a18b5bc',
-        ganador_id: '',
+        ganador_id: '35224446-b4c8-4bfd-b1cc-560d9b9041ea',
         visible: true,
         apertura: TIEMPO_APERTURA_D3,
         clausura: TIEMPO_CLAUSURA_D3,
@@ -403,8 +403,8 @@ const PARTIDAS = [
             },
             {
                 id: '142f17b3-f364-4bc4-b46c-499e2a3ee87e',
-                nombre: 'POR DEFINIR',
-                imagen: 'https://imgur.com/5Wm3uA4.png'
+                nombre: 'FUT ESPORTS',
+                imagen: 'https://imgur.com/M5RcvX5.png'
             }
         ]
     },
