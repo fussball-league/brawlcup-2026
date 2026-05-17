@@ -328,7 +328,7 @@ const PARTIDAS = [
         dia: "Dia 3 - Brawl Cup",
         titulo: "Cuartos de Final #4",
         id_db: '6b8a09c5-8fba-4c7b-b6ef-792613367525',
-        ganador_id: '',
+        ganador_id: 'b28a7659-2488-4fb3-843c-dea3c6d4de1f',
         visible: true,
         apertura: TIEMPO_APERTURA_D3,
         clausura: TIEMPO_CLAUSURA_D3,
@@ -382,8 +382,8 @@ const PARTIDAS = [
             },
             {
                 id: '35224446-b4c8-4bfd-b1cc-560d9b9041ea',
-                nombre: 'POR DEFINIR',
-                imagen: 'https://imgur.com/5Wm3uA4.png'
+                nombre: 'FUT ESPORTS',
+                imagen: 'https://imgur.com/M5RcvX5.png'
             }
         ]
     },
