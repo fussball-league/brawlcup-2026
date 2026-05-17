@@ -391,7 +391,7 @@ const PARTIDAS = [
         dia: "GRAN FINAL - Brawl Cup",
         titulo: "Gran Final",
         id_db: '25699301-b8a8-4799-9c5b-caee81cbfcdc',
-        ganador_id: '',
+        ganador_id: '12c70354-7336-4b44-b2a8-189f15c81f87',
         visible: true,
         apertura: TIEMPO_APERTURA_D3,
         clausura: TIEMPO_CLAUSURA_D3,
