@@ -373,7 +373,7 @@ const PARTIDAS = [
         ganador_id: '',
         visible: true,
         apertura: TIEMPO_APERTURA_D3,
-        clausura: TIEMPO_CLAUSURA_D3S,
+        clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
             {
                 id: '3b1deb49-3edb-4503-8a12-5dfc0407cce2',
