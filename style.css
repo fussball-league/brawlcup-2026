@@ -1,0 +1,646 @@
+/* ==========================================================================
+   1. GLOBAL Y RESET
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background: #000000;
+    background-attachment: fixed;
+    padding-top: 80px; 
+    padding-bottom: 60px;
+}
+
+h1, h2, h3 {
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ==========================================================================
+   2. ENCABEZADO Y NAVEGACIÓN
+   ========================================================================== */
+header {
+    background: #000000;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid #021a2b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre-sitio {
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.subtitulo-sitio {
+    font-size: 0.75rem;
+    color: #00a2ff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #888;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ffffff;
+}
+
+/* ==========================================================================
+   3. ELEMENTOS COMPARTIDOS (INSPIRADOS EN OPCIÓN VOTO)
+   ========================================================================== */
+.titulo-seccion-final {
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+/* ==========================================================================
+   4. SECCIÓN 1: ESTADÍSTICAS GENERALES
+   ========================================================================== */
+.contenedor-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    background: rgba(3, 41, 66, 0.1);
+    border: 1px solid #032942;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.icon-stat {
+    font-size: 1.5rem;
+    color: #00a2ff;
+    margin-bottom: 10px;
+}
+
+.stat-valor {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.stat-titulo {
+    font-size: 0.8rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+/* ==========================================================================
+   5. SECCIÓN 2: TABLAS DE POSICIONES (GRUPOS)
+   ========================================================================== */
+#tablas-grupos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 30px;
+    width: 100%;
+}
+
+.tabla-grupo-card {
+    background: rgba(3, 41, 66, 0.05);
+    border: 1px solid #032942;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.titulo-grupo {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 15px;
+    border-left: 4px solid #00a2ff;
+    padding-left: 10px;
+}
+
+.tabla-posiciones {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 6px;
+}
+
+.tabla-posiciones th {
+    font-size: 0.75rem;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px;
+    text-align: center;
+}
+
+.tabla-posiciones td {
+    padding: 14px 10px;
+    font-size: 0.9rem;
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.tabla-posiciones tr td:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.tabla-posiciones tr td:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.col-equipo {
+    text-align: left !important;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* ==========================================================================
+   6. SECCIÓN 3: LLAVES DE ELIMINACIÓN DIRECTA (PLAYOFFS)
+   ========================================================================== */
+.contenedor-llaves-scroll {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 20px 10px;
+    margin: 0 auto;
+}
+
+.brackets-playoffs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    min-width: 650px;
+}
+
+.columna-ronda {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+}
+
+.nombre-ronda {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #00a2ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.partido-llave {
+    position: relative;
+    background: rgba(3, 41, 66, 0.2);
+    border: 1px solid rgba(0, 162, 255, 0.1);
+    border-radius: 8px;
+    width: 240px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.equipo-llave {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 18px;
+    font-size: 0.9rem;
+    color: #666;
+    background: rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.equipo-llave .score {
+    font-weight: 900;
+}
+
+/* Estilo para los ganadores */
+.llave-ganador {
+    color: #ffffff;
+    background: rgba(3, 41, 66, 0.4);
+}
+
+.llave-ganador::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #00a2ff;
+}
+
+/* Variación especial para el Campeón Final */
+.llave-final {
+    border-color: rgba(0, 162, 255, 0.3);
+    box-shadow: 0 0 15px rgba(0, 162, 255, 0.15);
+}
+
+.llave-ganador-final {
+    color: #fff;
+    background: rgba(3, 41, 66, 0.6);
+    font-weight: bold;
+}
+
+.llave-ganador-final::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #00a2ff;
+}
+
+.text-oro {
+    color: #FFD700;
+    margin-right: 5px;
+}
+
+/* ==========================================================================
+   7. SECCIÓN 4: RANKING DESPLEGABLE (PODIO INTERNO)
+   ========================================================================== */
+.ranking-desplegable {
+    background: rgba(3, 41, 66, 0.05);
+    border: 1px solid #032942;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px #00000080;
+}
+
+.ranking-summary {
+    padding: 20px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    user-select: none;
+}
+
+.ranking-summary::-webkit-details-marker {
+    display: none;
+}
+
+.style-trofeo-menu {
+    color: #FFD700;
+    margin-right: 10px;
+}
+
+.flecha-toggle {
+    color: #00a2ff;
+    transition: transform 0.3s ease;
+}
+
+.ranking-desplegable[open] .flecha-toggle {
+    transform: rotate(180deg);
+}
+
+.contenido-ranking-desplegable {
+    padding: 20px;
+    border-top: 1px solid #032942;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Estructuras visuales internas del Podio */
+.podio-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 15px;
+    height: 380px;
+    margin: 20px auto 40px auto;
+    max-width: 800px;
+}
+
+.podio-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 10px;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+    text-align: center;
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+.podio-1 { 
+    height: 100%; 
+    background: linear-gradient(180deg, rgba(255, 215, 0, 0.12) 0%, transparent 100%);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-bottom: none;
+    order: 2;
+}
+
+.podio-2 { 
+    height: 80%; 
+    background: linear-gradient(180deg, rgba(192, 192, 192, 0.12) 0%, transparent 100%);
+    border: 2px solid rgba(192, 192, 192, 0.3);
+    border-bottom: none;
+    order: 1;
+}
+
+.podio-3 { 
+    height: 65%; 
+    background: linear-gradient(180deg, rgba(205, 127, 50, 0.12) 0%, transparent 100%);
+    border: 2px solid rgba(205, 127, 50, 0.3);
+    border-bottom: none;
+    order: 3;
+}
+
+.podio-avatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 3px solid rgba(255,255,255,0.1);
+    margin-bottom: 12px;
+}
+
+.podio-1 .podio-avatar { 
+    width: 85px; 
+    height: 85px; 
+    border-color: #FFD700; 
+}
+
+.podio-name {
+    color: #fff;
+    font-weight: 800;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.podio-stats {
+    font-size: 0.75rem;
+    color: #888;
+}
+
+.podio-medal { 
+    font-size: 2rem; 
+    margin-bottom: 5px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==========================================================================
+   8. TABLA DE RANKING INFERIOR (RESTO DE JUGADORES)
+   ========================================================================== */
+.tabla-contenedor {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ranking-table th,
+.ranking-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ranking-table th {
+    font-size: 0.8rem;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.fila-ranking td {
+    background: rgba(0,0,0,0.2);
+}
+
+.col-centrada {
+    text-align: center !important;
+}
+
+.usuario-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar-ranking {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.user-name-table {
+    font-weight: bold;
+    color: #fff;
+}
+
+.votos-count {
+    font-weight: bold;
+    color: #00a2ff;
+}
+
+/* ==========================================================================
+   9. PIE DE PÁGINA
+   ========================================================================== */
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.8rem;
+    color: #444;
+    border-top: 0.5px solid #021a2b;
+    margin-top: 40px;
+}
+
+/* ==========================================================================
+   10. DISPOSITIVOS MÓVILES Y RESPONSIVIDAD (MAX-WIDTH: 600PX)
+   ========================================================================== */
+@media (max-width: 600px) {
+    header {
+        padding: 0.8rem 3%;
+        flex-direction: column;
+        gap: 12px;
+        height: auto;
+    }
+
+    body {
+        padding-top: 140px;
+    }
+
+    /* Ajuste de Cuadrícula de Estadísticas */
+    .contenedor-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Modificación de Tablas de Grupos a Bloques Verticales */
+    #tablas-grupos-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 0px;
+    }
+
+    .tabla-grupo-card {
+        padding: 12px;
+    }
+
+    .tabla-posiciones {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        border-spacing: 0 4px;
+    }
+
+    .tabla-posiciones th, 
+    .tabla-posiciones td {
+        padding: 10px 6px;
+        font-size: 0.8rem;
+    }
+
+    .col-equipo {
+        min-width: 110px;
+        padding-left: 6px !important;
+    }
+
+    /* Brackets / Playoffs con Scroll */
+    .brackets-playoffs {
+        justify-content: flex-start;
+    }
+
+    /* Adaptación del Podio Olímpico a Lista Vertical Legible */
+    .podio-layout {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+
+    .podio-item {
+        width: 100%;
+        max-width: 340px;
+        height: auto !important;
+        padding: 15px;
+        border: 1px solid rgba(0, 162, 255, 0.15) !important;
+        border-radius: 12px;
+        order: unset !important; /* Visualización ordenada 1, 2, 3 hacia abajo */
+        background: rgba(3, 41, 66, 0.15) !important;
+    }
+
+    .podio-medal {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+        gap: 6px;
+    }
+
+    .podio-medal span {
+        font-size: 1.1rem !important;
+    }
+
+    .podio-avatar {
+        width: 55px !important;
+        height: 55px !important;
+        margin-bottom: 6px;
+    }
+
+    .podio-1 .podio-avatar {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    /* Deslizamiento y ajuste de la tabla de ranking inferior */
+    .tabla-contenedor {
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .ranking-table {
+        min-width: 440px;
+    }
+
+    .ranking-table td, 
+    .ranking-table th {
+        padding: 10px 8px;
+        font-size: 0.8rem;
+    }
+
+    .user-name-table {
+        display: inline-block;
+        max-width: 110px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        vertical-align: middle;
+    }
+    
+    .avatar-ranking {
+        width: 26px;
+        height: 26px;
+    }
+}

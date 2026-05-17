@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSC Hispano - Resumen Final</title>
+    <link rel="icon" href="https://imgur.com/hfZYV4l.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo-icon">
+                <img src="https://imgur.com/hfZYV4l.png" style="display: flex; height: 45px; width: 45px;">
+            </div>
+            <div class="logo-text">
+                <span class="nombre-sitio">BSC Hispano</span>
+                <span class="subtitulo-sitio">Brawl Cup 2026</span>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">¡Gracias por participar!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="padding: 20px; max-width: 1250px; margin: 10px auto;">
+        
+        <section id="estadisticas-finales" style="margin-bottom: 40px;">
+            <div class="contenedor-stats-grid">
+                <div class="stat-card">
+                    <i class="fa-solid fa-coins icon-stat"></i>
+                    <span class="stat-valor">+20K</span> <span class="stat-titulo">Puntos Entregados</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-check-to-slot icon-stat"></i>
+                    <span class="stat-valor">316</span> <span class="stat-titulo">Votos Totales</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-bullseye icon-stat"></i>
+                    <span class="stat-valor">241</span> <span class="stat-titulo">Aciertos Totales</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="seccion-tablas" style="margin-bottom: 50px;">
+            <h2 class="titulo-seccion-final">Tablas de Posiciones</h2>
+            <div id="tablas-grupos-container">
+                </div>
+        </section>
+
+        <section id="seccion-playoffs" style="margin-bottom: 50px;">
+            <h2 class="titulo-seccion-final">Fase de Eliminatorias</h2>
+            <div class="contenedor-llaves-scroll">
+                <div class="brackets-playoffs">
+                    
+                    <div class="columna-ronda">
+                        <span class="nombre-ronda">Cuartos de Final</span>
+                        
+                        <div class="partido-llave">
+                            <div class="equipo-llave llave-ganador">
+                                <span class="nombre-team">HMBLE</span>
+                                <span class="score">3</span>
+                            </div>
+                            <div class="equipo-llave">
+                                <span class="nombre-team">ONLY REALM</span>
+                                <span class="score">0</span>
+                            </div>
+                        </div>
+
+                        <div class="partido-llave">
+                            <div class="equipo-llave llave-ganador">
+                                <span class="nombre-team">TRIBE GAMING</span>
+                                <span class="score">3</span>
+                            </div>
+                            <div class="equipo-llave">
+                                <span class="nombre-team">REVENANT XSPARK</span>
+                                <span class="score">1</span>
+                            </div>
+                        </div>
+
+                        <div class="partido-llave">
+                            <div class="equipo-llave llave-ganador">
+                                <span class="nombre-team">ZETA DIVISION</span>
+                                <span class="score">3</span>
+                            </div>
+                            <div class="equipo-llave">
+                                <span class="nombre-team">BOUNTY HUNTERS</span>
+                                <span class="score">0</span>
+                            </div>
+                        </div>
+
+                        <div class="partido-llave">
+                            <div class="equipo-llave">
+                                <span class="nombre-team">CRAZY RACCOON</span>
+                                <span class="score">1</span>
+                            </div>
+                            <div class="equipo-llave llave-ganador">
+                                <span class="nombre-team">FUT ESPORTS</span>
+                                <span class="score">3</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="columna-ronda">
+                        <span class="nombre-ronda">Semifinales</span>
+                        
+                        <div class="partido-llave">
+                            <div class="equipo-llave llave-ganador">
+                                <span class="nombre-team">HMBLE</span>
+                                <span class="score">3</span>
+                            </div>
+                            <div class="equipo-llave">
+                                <span class="nombre-team">TRIBE GAMING</span>
+                                <span class="score">0</span>
+                            </div>
+                        </div>
+
+                        <div class="partido-llave">
+                            <div class="equipo-llave">
+                                <span class="nombre-team">ZETA DIVISION</span>
+                                <span class="score">0</span>
+                            </div>
+                            <div class="equipo-llave llave-ganador">
+                                <span class="nombre-team">FUT ESPORTS</span>
+                                <span class="score">3</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="columna-ronda">
+                        <span class="nombre-ronda">Gran Final</span>
+                        
+                        <div class="partido-llave llave-final">
+                            <div class="equipo-llave llave-ganador-final">
+                                <span class="nombre-team"><i class="fa-solid fa-trophy text-oro"></i> HMBLE</span>
+                                <span class="score">3</span>
+                            </div>
+                            <div class="equipo-llave">
+                                <span class="nombre-team">FUT ESPORTS</span>
+                                <span class="score">1</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="seccion-ranking-historico" style="margin-bottom: 50px;">
+            <details class="ranking-desplegable">
+                <summary class="ranking-summary">
+                    <span><i class="fa-solid fa-trophy style-trofeo-menu"></i> Ver Ranking Final de la Comunidad</span>
+                    <i class="fa-solid fa-chevron-down flecha-toggle"></i>
+                </summary>
+                <div class="contenido-ranking-desplegable">
+                    <div id="podio-container" class="podio-layout"></div>
+                    <div class="tabla-contenedor">
+                        <table class="ranking-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Usuario</th>
+                                    <th>Aciertos</th>
+                                    <th>Puntaje</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ranking-body">
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+            </details>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>2026 &copy; Mulee | No afiliado a Supercell - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="encuestas.js"></script>
+    <script src="ranking.js"></script>
+</body>
+</html>
