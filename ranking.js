@@ -92,3 +92,29 @@ function renderizarTablaEstatica(lista) {
 }
 
 document.addEventListener('DOMContentLoaded', cargarRankingEstatico);
+
+/* ==========================================================================
+   LÓGICA DE INTERSECTION OBSERVER PARA EFECTOS DE APARICIÓN
+   ========================================================================== */
+document.addEventListener('DOMContentLoaded', () => {
+    const secciones = document.querySelectorAll('.fade-section');
+
+    const opcionesObserver = {
+        root: null, // Usa el viewport de la pantalla
+        rootMargin: '0px',
+        threshold: 0.15 // Se activa cuando el 15% de la sección entra en pantalla
+    };
+
+    const observer = new Intersection Observer((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Deja de vigilarla una vez que ya apareció
+            }
+        });
+    }, opcionesObserver);
+
+    secciones.forEach(seccion => {
+        observer.observe(seccion);
+    });
+});
