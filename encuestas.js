@@ -350,7 +350,7 @@ const PARTIDAS = [
         titulo: "Semifinal #1",
         id_db: '2126890f-89bd-41c8-abc7-ce49628d6c0f',
         ganador_id: 'b39d7719-2dad-494c-808e-eb61a9f59317',
-        visible: true,
+        visible: false,
         apertura: TIEMPO_APERTURA_D3,
         clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
@@ -371,7 +371,7 @@ const PARTIDAS = [
         titulo: "Semifinal #2",
         id_db: '667c3759-61e6-467b-8bf3-19ad2a18b5bc',
         ganador_id: '35224446-b4c8-4bfd-b1cc-560d9b9041ea',
-        visible: true,
+        visible: false,
         apertura: TIEMPO_APERTURA_D3,
         clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
