@@ -266,7 +266,7 @@ const PARTIDAS = [
         titulo: "Cuartos de Final #1",
         id_db: '5d797cfa-7ba4-4477-b616-aa772e28a013',
         ganador_id: '0ee86279-8bd4-4e63-8032-0e0bc61966cc',
-        visible: true,
+        visible: false,
         apertura: TIEMPO_APERTURA_D3,
         clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
@@ -287,7 +287,7 @@ const PARTIDAS = [
         titulo: "Cuartos de Final #2",
         id_db: '7c30cb12-c47a-4925-8f9f-568b6ec68560',
         ganador_id: 'bbbfa33b-0f65-4274-9ed7-a8226951cb43',
-        visible: true,
+        visible: false,
         apertura: TIEMPO_APERTURA_D3,
         clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
@@ -308,7 +308,7 @@ const PARTIDAS = [
         titulo: "Cuartos de Final #3",
         id_db: '54173a7d-cd30-474d-abf7-555fee6f9677',
         ganador_id: 'ce42e428-4e54-44d3-8451-c38cea6e9496',
-        visible: true,
+        visible: false,
         apertura: TIEMPO_APERTURA_D3,
         clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
@@ -329,7 +329,7 @@ const PARTIDAS = [
         titulo: "Cuartos de Final #4",
         id_db: '6b8a09c5-8fba-4c7b-b6ef-792613367525',
         ganador_id: 'b28a7659-2488-4fb3-843c-dea3c6d4de1f',
-        visible: true,
+        visible: false,
         apertura: TIEMPO_APERTURA_D3,
         clausura: TIEMPO_CLAUSURA_D3,
         opciones: [
@@ -349,7 +349,7 @@ const PARTIDAS = [
         dia: "Dia 3 - Brawl Cup",
         titulo: "Semifinal #1",
         id_db: '2126890f-89bd-41c8-abc7-ce49628d6c0f',
-        ganador_id: '',
+        ganador_id: 'b39d7719-2dad-494c-808e-eb61a9f59317',
         visible: true,
         apertura: TIEMPO_APERTURA_D3,
         clausura: TIEMPO_CLAUSURA_D3,
@@ -388,22 +388,22 @@ const PARTIDAS = [
         ]
     },
     {
-        dia: "Dia 3 - Brawl Cup",
+        dia: "GRAN FINAL - Brawl Cup",
         titulo: "Gran Final",
         id_db: '25699301-b8a8-4799-9c5b-caee81cbfcdc',
         ganador_id: '',
-        visible: false,
+        visible: true,
         apertura: TIEMPO_APERTURA_D3,
-        clausura: TIEMPO_CLAUSURA_D3,
+        clausura: TIEMPO_CLAUSURA_D3S,
         opciones: [
             {
                 id: '12c70354-7336-4b44-b2a8-189f15c81f87',
-                nombre: 'SF1',
-                imagen: 'https://imgur.com/5Wm3uA4.png'
+                nombre: 'HMBLE',
+                imagen: 'https://i.imgur.com/mmZ8KAq.png'
             },
             {
                 id: '142f17b3-f364-4bc4-b46c-499e2a3ee87e',
-                nombre: 'SF2',
+                nombre: 'POR DEFINIR',
                 imagen: 'https://imgur.com/5Wm3uA4.png'
             }
         ]
