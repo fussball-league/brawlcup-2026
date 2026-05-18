@@ -38,12 +38,6 @@ const RANKING_FINAL = [
     { nombre: "kileito", avatar: "https://cdn.discordapp.com/avatars/1461076509233250599/ac2208c40b8da7491476b21fe08d46b9.png", aciertos: 1, puntos: 100 }
 ];
 
-function cargarRankingEstatico() {
-    renderizarPodioEstatico(RANKING_FINAL);
-    renderizarTablaEstatica(RANKING_FINAL.slice(3));
-    iniciarContadores();
-}
-
 function iniciarContadores() {
     const contadores = document.querySelectorAll´('.contador-animado');
     const velocidad = 60;
@@ -65,6 +59,13 @@ function iniciarContadores() {
         actualizarContador();
     });
 }
+
+function cargarRankingEstatico() {
+    renderizarPodioEstatico(RANKING_FINAL);
+    renderizarTablaEstatica(RANKING_FINAL.slice(3));
+    iniciarContadores();
+}
+
 
 function renderizarPodioEstatico(lista) {
     const contenedor = document.getElementById('podio-container');
