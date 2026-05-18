@@ -56,28 +56,5 @@ function renderizarTablasGrupos() {
     `).join('');
 }
 
+
 document.addEventListener('DOMContentLoaded', renderizarTablasGrupos);
-
-function iniciarContadores() {
-    const contadores = document.querySelectorAll´('.contador-animado');
-    const velocidad = 60;
-
-    contadores.forEach(contador => {
-        const actualizarContador = () => {
-            const destino = +contador.getAttribute('data-target');
-            const valorActual = +contador.innerText;
-
-            const incremento = Math.ceil(destino / velocidad);
-            if (valorActual < destino) {
-                contador.innerText = Math.min(valorActual + incremento, destino);
-                setTimeout(actualizarContador, 25);
-            } else {
-                contador.innetText = destino;
-            }
-        };
-
-        actualizarContador();
-    });
-}
-
-document.addEventListener('DOMContentLoaded', iniciarContadores);
