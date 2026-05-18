@@ -88,7 +88,7 @@ function renderizarTablaEstatica(lista) {
 
 function iniciarContadores() {
     const contadores = document.querySelectorAll('.contador-animado');
-    const velocidad = 60;
+    const velocidad = 30;
 
     contadores.forEach(contador => {
         const actualizarContador = () => {
