@@ -38,29 +38,6 @@ const RANKING_FINAL = [
     { nombre: "kileito", avatar: "https://cdn.discordapp.com/avatars/1461076509233250599/ac2208c40b8da7491476b21fe08d46b9.png", aciertos: 1, puntos: 100 }
 ];
 
-function iniciarContadores() {
-    const contadores = document.querySelectorAll´('.contador-animado');
-    const velocidad = 60;
-
-    contadores.forEach(contador => {
-        const actualizarContador = () => {
-            const destino = +contador.getAttribute('data-target');
-            const valorActual = +contador.innerText;
-
-            const incremento = Math.ceil(destino / velocidad);
-            if (valorActual < destino) {
-                contador.innerText = Math.min(valorActual + incremento, destino);
-                setTimeout(actualizarContador, 25);
-            } else {
-                contador.innetText = destino;
-            }
-        };
-
-        actualizarContador();
-    });
-}
-
-
 function renderizarPodioEstatico(lista) {
     const contenedor = document.getElementById('podio-container');
     if (!contenedor || lista.length === 0) return;
@@ -109,10 +86,32 @@ function renderizarTablaEstatica(lista) {
     }).join('');
 }
 
+function iniciarContadores() {
+    const contadores = document.querySelectorAll('.contador-animado');
+    const velocidad = 60;
+
+    contadores.forEach(contador => {
+        const actualizarContador = () => {
+            const destino = +contador.getAttribute('data-target');
+            const valorActual = +contador.innerText;
+            const incremento = Math.ceil(destino / velocidad);
+
+            if (valorActual < destino) {
+                contador.innerText = Math.min(valorActual + incremento, destino);
+                setTimeout(actualizarContador, 25);
+            } else {
+                contador.innerText = destino;
+            }
+        };
+        actualizarContador();
+    });
+}
+
 function cargarRankingEstatico() {
     renderizarPodioEstatico(RANKING_FINAL);
     renderizarTablaEstatica(RANKING_FINAL.slice(3));
-    iniciarContadores();
+    iniciarContadores()
 }
+
 
 document.addEventListener('DOMContentLoaded', cargarRankingEstatico);
