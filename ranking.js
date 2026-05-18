@@ -41,6 +41,29 @@ const RANKING_FINAL = [
 function cargarRankingEstatico() {
     renderizarPodioEstatico(RANKING_FINAL);
     renderizarTablaEstatica(RANKING_FINAL.slice(3));
+    iniciarContadores();
+}
+
+function iniciarContadores() {
+    const contadores = document.querySelectorAll´('.contador-animado');
+    const velocidad = 60;
+
+    contadores.forEach(contador => {
+        const actualizarContador = () => {
+            const destino = +contador.getAttribute('data-target');
+            const valorActual = +contador.innerText;
+
+            const incremento = Math.ceil(destino / velocidad);
+            if (valorActual < destino) {
+                contador.innerText = Math.min(valorActual + incremento, destino);
+                setTimeout(actualizarContador, 25);
+            } else {
+                contador.innetText = destino;
+            }
+        };
+
+        actualizarContador();
+    });
 }
 
 function renderizarPodioEstatico(lista) {
