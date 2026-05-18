@@ -60,12 +60,6 @@ function iniciarContadores() {
     });
 }
 
-function cargarRankingEstatico() {
-    renderizarPodioEstatico(RANKING_FINAL);
-    renderizarTablaEstatica(RANKING_FINAL.slice(3));
-    iniciarContadores();
-}
-
 
 function renderizarPodioEstatico(lista) {
     const contenedor = document.getElementById('podio-container');
@@ -113,6 +107,12 @@ function renderizarTablaEstatica(lista) {
             </tr>
         `;
     }).join('');
+}
+
+function cargarRankingEstatico() {
+    renderizarPodioEstatico(RANKING_FINAL);
+    renderizarTablaEstatica(RANKING_FINAL.slice(3));
+    iniciarContadores();
 }
 
 document.addEventListener('DOMContentLoaded', cargarRankingEstatico);
