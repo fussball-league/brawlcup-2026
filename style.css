@@ -478,22 +478,14 @@ nav ul li a.active {
 
 /* Estilos para tu imagen personalizada */
 .preloader-img-custom {
-    width: 60px;  /* Ajusta el tamaño horizontal a tu gusto */
-    height: 60px; /* Ajusta el tamaño vertical a tu gusto */
+    width: 120px;  /* Ajusta el tamaño horizontal a tu gusto */
+    height: 120px; /* Ajusta el tamaño vertical a tu gusto */
     object-fit: contain;
-}
-
-.preloader-texto {
-    font-size: 1.8rem;
-    font-weight: 900;
-    color: #fff;
-    letter-spacing: 2px;
-    margin: 0; /* Quitamos márgenes para que se alinee perfectamente con la foto */
 }
 
 /* Animación suave de pulso para todo el conjunto (imagen + texto) */
 @keyframes pulsoContenido {
-    0%, 100% { transform: scale(1); opacity: 0.9; }
+    0%, 100% { transform: scale(1); opacity: 0.5; }
     50% { transform: scale(1.05); opacity: 1; }
 }
 
