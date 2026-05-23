@@ -110,7 +110,10 @@ function iniciarContadores() {
 function cargarRankingEstatico() {
     renderizarPodioEstatico(RANKING_FINAL);
     renderizarTablaEstatica(RANKING_FINAL.slice(3));
-    iniciarContadores(); 
+    
+    setTimeout(() => {
+        iniciarContadores();
+    }, 1600); 
 
     setTimeout(() => {
         const preloader = document.getElementById('preloader');
@@ -119,6 +122,5 @@ function cargarRankingEstatico() {
         }
     }, 1600); 
 }
-
 
 document.addEventListener('DOMContentLoaded', cargarRankingEstatico);
