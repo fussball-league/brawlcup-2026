@@ -110,7 +110,14 @@ function iniciarContadores() {
 function cargarRankingEstatico() {
     renderizarPodioEstatico(RANKING_FINAL);
     renderizarTablaEstatica(RANKING_FINAL.slice(3));
-    iniciarContadores()
+    iniciarContadores(); 
+
+    setTimeout(() => {
+        const preloader = document.getElementById('preloader');
+        if (preloader) {
+            preloader.classList.add('oculto');
+        }
+    }, 1600); 
 }
 
 
