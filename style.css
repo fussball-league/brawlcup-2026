@@ -501,7 +501,7 @@ nav ul li a.active {
    TOOLTIP INTERACTIVO (ENLACE COMUNIDAD)
    ========================================================================== */
 .enlace-comunidad {
-    color: #ffcc00; /* Color dorado destacado */
+    color: #00a2ff;
     text-decoration: none;
     font-weight: 600;
     position: relative;
