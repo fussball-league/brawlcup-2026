@@ -5,7 +5,7 @@ const RANKING_FINAL = [
     { nombre: "morgangx10", avatar: "https://cdn.discordapp.com/embed/avatars/0.png", aciertos: 14, puntos: 1525 },
 
     // --- TABLA DE POSICIONES (RESTO DE JUGADORES) ---
-    { nombre: "facundo08r", avatar: "https://cdn.discordapp.com/avatars/798384051190759455/171fb527b80339ca5ccb384e8ad29d1f.png", aciertos: 14, puntos: 1525 },
+    { nombre: "facundo08r", avatar: "https://cdn.discordapp.com/embed/avatars/0.png", aciertos: 14, puntos: 1525 },
     { nombre: "teeosnt_", avatar: "https://cdn.discordapp.com/avatars/788423742699077672/8b2a90ad89fd2ece931603826e99ef70.png", aciertos: 14, puntos: 1500 },
     { nombre: "wally.1603", avatar: "https://cdn.discordapp.com/avatars/878968118892978207/15cf0a4b5bf0e815811318e948524cfd.png", aciertos: 14, puntos: 1500 },
     { nombre: "damianmsj", avatar: "https://cdn.discordapp.com/avatars/1277580100958818376/8611acea03daeaf4611e66438a1fea52.png", aciertos: 14, puntos: 1500 },
@@ -14,12 +14,12 @@ const RANKING_FINAL = [
     { nombre: "snow31", avatar: "https://cdn.discordapp.com/avatars/915583916998557767/1ad9e74962a651c6901c1d3270831e9e.png", aciertos: 12, puntos: 1325 },
     { nombre: "kilersanvi_77148", avatar: "https://cdn.discordapp.com/avatars/1381694885480108083/f390061bc6cfcd492c08f3d9ba7c5a55.png", aciertos: 12, puntos: 1300 },
     { nombre: "isyctox", avatar: "https://cdn.discordapp.com/embed/avatars/0.png", aciertos: 12, puntos: 1300 },
-    { nombre: "fenixzz__", avatar: "https://cdn.discordapp.com/avatars/651537256905048065/624c8c28ebccbd4f34ea8b81b8dd3b6b.png", aciertos: 12, puntos: 1300 },
+    { nombre: "fenixzz__", avatar: "https://cdn.discordapp.com/embed/avatars/0.png", aciertos: 12, puntos: 1300 },
     { nombre: "diego088695", avatar: "https://cdn.discordapp.com/avatars/1169321568938233927/6c5996770c985bcd6e5b68131ff2ba04.png", aciertos: 11, puntos: 1250 },
-    { nombre: "guillelolo05", avatar: "https://cdn.discordapp.com/avatars/629976713660596226/d4500ae36e586347e500ec86e8c5ee91.png", aciertos: 11, puntos: 1150 },
+    { nombre: "guillelolo05", avatar: "https://cdn.discordapp.com/embed/avatars/0.png", aciertos: 11, puntos: 1150 },
     { nombre: "alejandrillo._", avatar: "https://cdn.discordapp.com/avatars/826188285025714246/f79ceb08c8d23a8978222a38fe679a6e.png", aciertos: 10, puntos: 1050 },
     { nombre: "hyshiu", avatar: "https://cdn.discordapp.com/avatars/1462874026123722980/450abf2e0d2d266aeb4b777908a69f7e.png", aciertos: 10, puntos: 1050 },
-    { nombre: "vg537_yt", avatar: "https://cdn.discordapp.com/avatars/1182704557046907023/a0d2d2ed82c24b8289b133cff3187c7c.png", aciertos: 9, puntos: 975 },
+    { nombre: "vg537_yt", avatar: "https://cdn.discordapp.com/embed/avatars/0.png", aciertos: 9, puntos: 975 },
     { nombre: "rub19dor", avatar: "https://cdn.discordapp.com/embed/avatars/0.png", aciertos: 9, puntos: 975 },
     { nombre: "alexander059287", avatar: "https://cdn.discordapp.com/avatars/1121407658579218503/602620c7047a62431ff4c54acabf4bd0.png", aciertos: 6, puntos: 850 },
     { nombre: "leoo0626_91975", avatar: "https://cdn.discordapp.com/avatars/1207359224670322698/68d9fb875e3933fea778f132a838885f.png", aciertos: 6, puntos: 600 },
@@ -34,7 +34,7 @@ const RANKING_FINAL = [
     { nombre: "pedriporro87", avatar: "https://cdn.discordapp.com/avatars/1077931914750595094/637ba99e09595d443f430eaffcac5787.png", aciertos: 3, puntos: 325 },
     { nombre: "evacount", avatar: "https://cdn.discordapp.com/avatars/964801892511272960/612959355c59686168ca88aaf03e0d8b.png", aciertos: 3, puntos: 325 },
     { nombre: "gooooga", avatar: "https://cdn.discordapp.com/avatars/614652623026520065/a0cf713af9d3cc2ab10ce3879fa7f78b.png", aciertos: 2, puntos: 250 },
-    { nombre: "themoonisrising", avatar: "https://cdn.discordapp.com/avatars/869310137674924042/d3cb07fce7a0387d618464df76522389.png", aciertos: 1, puntos: 225 },
+    { nombre: "themoonisrising", avatar: "https://cdn.discordapp.com/embed/avatars/0.png", aciertos: 1, puntos: 225 },
     { nombre: "kileito", avatar: "https://cdn.discordapp.com/avatars/1461076509233250599/ac2208c40b8da7491476b21fe08d46b9.png", aciertos: 1, puntos: 100 }
 ];
 
