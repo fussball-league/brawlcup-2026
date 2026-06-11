@@ -786,11 +786,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 180px);
     padding: 20px;
     text-align: center;
-    flex-direction: column; 
-    gap: 30px;">
 }
 
 .proximamente-card {
@@ -799,11 +796,15 @@ footer {
     padding: 40px 30px;
     border-radius: 20px;
     max-width: 550px;
+    min-height: calc(100vh - 180px);
     width: 100%;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     animation: fadeIn 0.5s ease-out;
-    flex-direction: column; 
-    gap: 30px;">
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes fadeIn {
