@@ -1,4 +1,4 @@
-const TARGET_TIMESTAMP = 1781265600; 
+const TARGET_TIMESTAMP = 1781218800; 
 
 (function() {
     const targetTime = TARGET_TIMESTAMP * 1000;
