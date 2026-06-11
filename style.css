@@ -778,3 +778,115 @@ footer {
         height: 26px;
     }
 }
+
+/* ==========================================================================
+   5. SECCIÓN PRÓXIMAMENTE (CENTRAL)
+   ========================================================================== */
+
+.proximamente-card {
+    background: rgba(3, 41, 66, 0.1);
+    border: 1px solid #032942;
+    padding: 40px 30px;
+    border-radius: 20px;
+    max-width: 550px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.tag-status {
+    color: #00a2ff;
+    font-size: 0.8rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.titulo-proximamente {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.subtexto-proximamente {
+    color: #888888;
+    font-size: 0.95rem;
+    margin-top: 15px;
+    font-weight: 400;
+}
+
+@media (max-width: 600px) {
+    .titulo-proximamente {
+        font-size: 2rem;
+    }
+}
+
+/* ==========================================================================
+   5.1 INTEGRACIÓN DE CAJAS DEL CONTADOR (REESCALADO MÁS GRANDE)
+   ========================================================================== */
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.countdown-box {
+    background: linear-gradient(180deg, rgba(3, 41, 66, 0.4) 0%, rgba(1, 15, 26, 0.7) 100%);
+    border: 1.5px solid rgba(0, 162, 255, 0.4);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 0 25px rgba(0, 162, 255, 0.15);
+    min-width: 120px;
+    padding: 16px 10px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.countdown-value {
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1.1;
+    text-shadow: 0 0 15px rgba(0, 162, 255, 0.6);
+}
+
+.countdown-label {
+    margin-top: 4px;
+    font-size: 0.75rem;
+    color: #00a2ff;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Responsividad para mantenerlo estable en móviles */
+@media (max-width: 500px) {
+    .countdown-container {
+        gap: 8px;
+    }
+    .countdown-box {
+        min-width: 70px;
+        padding: 10px 5px;
+    }
+    .countdown-value {
+        font-size: 1.6rem;
+    }
+    .countdown-label {
+        font-size: 0.6rem;
+    }
+}
