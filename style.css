@@ -786,7 +786,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 180px);
     padding: 10px;
     text-align: center;
 }
@@ -846,7 +845,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
     width: 100%;
 }
 
