@@ -846,9 +846,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
     width: 100%;
-    margin-top: 10px;
 }
 
 .countdown-box {
