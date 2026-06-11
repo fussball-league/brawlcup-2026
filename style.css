@@ -782,6 +782,14 @@ footer {
 /* ==========================================================================
    5. SECCIÓN PRÓXIMAMENTE (CENTRAL)
    ========================================================================== */
+.main-proximamente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 180px);
+    padding: 20px;
+    text-align: center;
+}
 
 .proximamente-card {
     background: rgba(3, 41, 66, 0.1);
